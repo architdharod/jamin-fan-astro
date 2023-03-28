@@ -1,14 +1,18 @@
 ---
 import HeaderLink from './HeaderLink.astro';
+import { getCollection } from 'astro:content';
+
+const proj = await getCollection('projects');
+
 ---
 
 <header>
 	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro">GitHub</HeaderLink>
+		{proj.map(element =>(
+			<HeaderLink 
+				href={`/project/`+ element.slug}>{element.data.title}
+			</HeaderLink>
+		))}
 	</nav>
 </header>
 
