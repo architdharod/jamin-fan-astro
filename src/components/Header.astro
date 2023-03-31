@@ -69,12 +69,11 @@ const proj = await getCollection('projects');
 	header {
 		top: 0;
 		right: 0;
-		width: 38%;
 		height: 100vh;
 		padding: clamp(0.8rem, 0.5442rem + 2.0465vw, 3rem);
 
 		overflow-y: scroll;
-		background-color: #F5D9CEB3;
+		background-color: #f5d9ce;
 
 		z-index: 1;
 		position: fixed;
@@ -97,14 +96,22 @@ const proj = await getCollection('projects');
 
 	ul {
 		line-height: clamp(1rem, 0.8488rem + 1.2093vw, 2.3rem);
+		padding-left: 1rem;
 	}
 
 	li {
 		font-size: clamp(1.0875rem, 0.905rem + 0.9125vw, 2rem);
+		position: relative;
+		list-style-type: none;
 	}
 
-	li::marker {
-		font-size: 1rem;
+	li::before {
+		content: "•";
+		font-size: 1.5rem;
+		position: absolute;
+		left: -0.8em; /* Adjust this value to control the horizontal position of the marker */
+		top: 50%;
+		transform: translateY(-50%); /* Vertically center the marker with the text */
 	}
 
 	p {
@@ -123,10 +130,20 @@ const proj = await getCollection('projects');
 	}
 
 	p :is(a) {
+		text-decoration: none;
 		color: inherit;
+		font-weight: 600;
 	}
 
 	.nav-footer {
 		font-size: clamp(0.6rem, 0.52rem + 0.4vw, 1rem);
+	}
+
+	@media (min-width: 700px) {
+		header {
+			width: 38%;
+			z-index: 1;
+			background-color: #F5D9CEB3;
+		}
 	}
 </style>
