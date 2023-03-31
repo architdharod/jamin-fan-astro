@@ -87,7 +87,6 @@ select {
        url('/fonts/space-mono-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('/fonts/space-mono-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
        url('/fonts/space-mono-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/fonts/space-mono-v12-latin-regular.svg#SpaceMono') format('svg'); /* Legacy iOS */
 }
 
 /* rubik-regular - latin */
@@ -100,8 +99,9 @@ select {
        url('../fonts/rubik-v26-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/rubik-v26-latin-regular.woff') format('woff'), /* Modern Browsers */
        url('../fonts/rubik-v26-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/rubik-v26-latin-regular.svg#Rubik') format('svg'); /* Legacy iOS */
 }
+
+/* TODO: set mini width of 200px*/
 
 /* Fonts and Font colors */
 

@@ -1,11 +1,11 @@
 ---
-title: "A walk in a Mermaid's shoes"
-description: "Die Begegnung zwischen Nirvana und Reinkarnation"
-position: "middle"
-year: 2021
+title: "OHNEZWEI"
+description: "sed magna sint enim labore ullamco aute commodo"
+position: "top"
+year: 2020
 coverImage: {
-    url: "/projectImg/bardo/cover.jpg",
-    alt: "Bardo Poster",
+    url: "/projectImg/OHNEZWEI/cover.jpg",
+    alt: "OHNEZWEI POSTER",
 }
 images : []
 

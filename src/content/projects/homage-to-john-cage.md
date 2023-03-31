@@ -1,11 +1,11 @@
 ---
-title: "A walk in a Mermaid's shoes"
-description: "Die Begegnung zwischen Nirvana und Reinkarnation"
-position: "middle"
-year: 2021
+title: "Hommage to John Cage"
+description: "sed magna sint enim labore ullamco aute commodo"
+position: "top"
+year: 1995
 coverImage: {
-    url: "/projectImg/bardo/cover.jpg",
-    alt: "Bardo Poster",
+    url: "/projectImg/homage-to-john-cage/cover.jpg",
+    alt: "Hommage to John Cage POSTER",
 }
 images : []
 

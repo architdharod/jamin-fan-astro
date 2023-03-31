@@ -5,21 +5,63 @@ import { getCollection } from 'astro:content';
 const proj = await getCollection('projects');
 
 ---
-
 <header>
 	<nav>
-		<h1 class="font-rubik color-primary">There is only one way to save yourself: sacrifice your reputation.</h1>
+		<div>
+			<h2 class="font-space-mono color-secondary">Choreographer - Dancefilm maker - Dancer - Artist</h2>
+			<h1 class="font-rubik color-primary">There is only one way to save yourself: sacrifice your reputation.</h1>
+		</div>
 
-		<HeaderLink href={"/"} class="block font-rubik">
-			Home
-		</HeaderLink>
-		{proj.map(element =>(
-			<HeaderLink href={`/project/`+ element.slug} class="block font-rubik">
-				{element.data.title}
-			</HeaderLink>
-		))}
+		<div>
+			<h2 class="font-space-mono color-secondary">PROJECTS</h2>
+			<ul>
+				{proj.map(element =>(
+					<li>
+						<HeaderLink href={`/project/`+ element.slug} class="block font-rubik">
+						{element.data.title}
+						</HeaderLink>
+					</li>
+				))}
+			</ul>
+		</div>
 
-		<h2 class="font-space-mono color-secondary">Jasmine Yi Chun Fan</h2>
+		<div>
+			<h2 class="font-space-mono color-secondary">JASMINE FAN</h2>
+			<p class="font-rubik">
+				sed dolor officia culpa pariatur irure commodo consequat nisi culpa incididunt incididunt 
+				nostrud dolor sunt veniam laboris veniam veniam. consequat pariatur labore labore enim ex 
+				in proident id cupidatat et aute ex eiusmod cupidatat voluptate pariatur irure eu. cupidatat in 
+				nostrud deserunt culpa qui deserunt et occaecat fugiat id elit ullamco eu id ea adipiscing. 
+				<br>
+				<br>
+				exercitation consequat Excepteur cupidatat non deserunt aliqua commodo cillum aute consectetur 
+				nulla dolor eu minim amet sint. elit sunt est consequat adipiscing voluptate ut enim ut nulla 
+				occaecat laboris aliquip voluptate eiusmod voluptate. eu lorem Excepteur ex velit id do commodo.
+			</p>
+			<div class="social-media">
+				<a href="https://www.instagram.com/jasminefan_choreographer/" target="#">
+					<i class="bi bi-instagram color-primary"></i>
+				</a>
+				<a href="https://www.youtube.com/channel/UCxkomaXB9x5oNEI_5W9KdIw" target="#">
+					<i class="bi bi-youtube color-primary"></i>
+				</a>
+				<a href="https://vimeo.com/jasminefan" target="#">
+					<i class="bi bi-vimeo color-primary"></i>
+				</a>
+			</div>
+		</div>
+
+		<div>
+			<h2 class="font-space-mono color-secondary">CONTACT</h2>
+			<p class="font-rubik color-primary">
+				Hein-Hoyer-Straße 12 <br>
+				20359 Hamburg, Germany <br>
+				Phone: +49 1234 567890 <br>
+				Founded: October 1, 1860 <br>
+			</p>
+		</div>
+
+		<p class="nav-footer font-rubik color-primary">Designed & Developed by <a href="https://dharod.de" target="_blank">Archit Dharod</a></p>
 	</nav>
 </header>
 
@@ -29,7 +71,7 @@ const proj = await getCollection('projects');
 		right: 0;
 		width: 38%;
 		height: 100vh;
-		padding: 3rem;
+		padding: clamp(0.8rem, 0.5442rem + 2.0465vw, 3rem);
 
 		overflow-y: scroll;
 		background-color: #F5D9CEB3;
@@ -37,12 +79,54 @@ const proj = await getCollection('projects');
 		z-index: 1;
 		position: fixed;
 	} 
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		gap: clamp(1.8rem, 1.56rem + 1.2vw, 3rem);
+	}
 	
 	h1 {
-		font-size: 3rem;
+		font-size: clamp(1.631875rem, 1.3582rem + 1.3681vw, 3rem);
     	line-height: 1.2;
 	}
+
+	h2{
+		font-size: clamp(0.7615625rem, 0.6806rem + 0.4047vw, 1.16625rem);
+	}
+
+	ul {
+		line-height: clamp(1rem, 0.8488rem + 1.2093vw, 2.3rem);
+	}
+
+	li {
+		font-size: clamp(1.0875rem, 0.905rem + 0.9125vw, 2rem);
+	}
+
+	li::marker {
+		font-size: 1rem;
+	}
+
+	p {
+		font-size: clamp(0.86875rem, 0.7425rem + 0.6312vw, 1.5rem);
+	}
+
 	.block {
 		display: block;
 		}
+	
+	.social-media {
+		padding-top: 1rem;
+		display: flex;
+		gap: 0.8em;
+		font-size: clamp(1.088125rem, 0.9058rem + 0.9119vw, 2rem);
+	}
+
+	p :is(a) {
+		color: inherit;
+	}
+
+	.nav-footer {
+		font-size: clamp(0.6rem, 0.52rem + 0.4vw, 1rem);
+	}
 </style>
