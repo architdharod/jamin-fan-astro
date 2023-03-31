@@ -10,9 +10,11 @@
     "start": "npx http-server ./dist"
   },
   "dependencies": {
-    "astro": "^2.1.4",
     "@astrojs/mdx": "^0.18.2",
     "@astrojs/rss": "^2.3.1",
-    "@astrojs/sitemap": "^1.2.1"
+    "@astrojs/sitemap": "^1.2.1",
+    "@fontsource/rubik": "^4.5.14",
+    "@fontsource/space-mono": "^4.5.12",
+    "astro": "^2.1.4"
   }
 }
