@@ -1,11 +1,13 @@
 ---
-title: "Mudra"
-description: "Die Begegnung zwischen Nirvana und Reinkarnation"
-position: "top"
-year: 2020
+id: "03"
+title: "Hommage to John Cage"
+description: "sed magna sint enim labore ullamco aute commodo"
+position: "middle"
+color: "yellow"
+year: 1995
 coverImage: {
-    url: "/projectImg/mudra/cover.jpg",
-    alt: "Mudra Poster",
+    url: "/projectImg/homage-to-john-cage/cover.jpg",
+    alt: "Hommage to John Cage POSTER",
 }
 images : []
 

@@ -1,7 +1,9 @@
 ---
+id: "04"
 title: "OHNEZWEI"
 description: "sed magna sint enim labore ullamco aute commodo"
 position: "top"
+color: "white"
 year: 2020
 coverImage: {
     url: "/projectImg/OHNEZWEI/cover.jpg",

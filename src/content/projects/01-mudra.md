@@ -1,11 +1,13 @@
 ---
-title: "A walk in a Mermaid's shoes"
+id: "01"
+title: "Mudra"
 description: "Die Begegnung zwischen Nirvana und Reinkarnation"
-position: "middle"
-year: 2021
+position: "bottom"
+color: "white"
+year: 2020
 coverImage: {
-    url: "/projectImg/bardo/cover.jpg",
-    alt: "Bardo Poster",
+    url: "/projectImg/mudra/cover.jpg",
+    alt: "Mudra Poster",
 }
 images : []
 

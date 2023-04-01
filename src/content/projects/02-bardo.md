@@ -1,11 +1,13 @@
 ---
-title: "Hommage to John Cage"
-description: "sed magna sint enim labore ullamco aute commodo"
-position: "top"
-year: 1995
+id: "02"
+title: "Bardo"
+description: "Die Begegnung zwischen Nirvana und Reinkarnation. This sentence is to test how the description spans"
+position: "bottom"
+color: "red"
+year: 2021
 coverImage: {
-    url: "/projectImg/homage-to-john-cage/cover.jpg",
-    alt: "Hommage to John Cage POSTER",
+    url: "/projectImg/bardo/cover.jpg",
+    alt: "Bardo Poster",
 }
 images : []
 

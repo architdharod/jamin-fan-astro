@@ -1,36 +1,33 @@
 ---
+import { getCollection } from "astro:content";
+const ProjectCovers = await getCollection('projects');
 
+//position, color, default-color, size, font
 ---
-<section>
-    <img src="/projekt-3.jpg" />
-    <div>
-        <h1>Title 1</h1>
-    </div>
-</section>
-<section>
-    <img src="/projekt-5.jpg" />
-    <div>
-        <h1>Title 1</h1>
-    </div>
-</section>
-<section>
-    <img src="/projekt-4.jpg" />
-    <div>
-        <h1>Title 1</h1>
-    </div>
-</section>
-<section>
-    <img src="/projekt-2.jpg" />
-    <div>
-        <h1>Title 1</h1>
-    </div>
-</section>
-<section>
-    <img src="/projekt-1.jpg" />
-    <div>
-        <h1>Title 1</h1>
-    </div>
-</section>
+<main>
+    {
+        ProjectCovers.map(cover =>(
+            <section>
+                <img src={cover.data.coverImage.url} alt={cover.data.coverImage.alt}/>
+                
+                <div class={`gallery-discription ${cover.data.position} ${cover.data.color}`}>
+                    <h1 id="id" class="font-rubik">{cover.data.id}</h1>
+                    <div id="heading">
+                        <h1 class="font-rubik">
+                            <a href={`/project/`+ cover.slug}>
+                                {cover.data.title}
+                            </a>
+                        </h1>
+                        <h2>
+                            <a href={`/project/`+ cover.slug} class="font-rubik">{cover.data.description}  &#8594</a>
+                        </h2>
+                    </div>
+                </div>
+            </section>
+        ))
+    }
+</main>
+
 <style>
     section {
         min-height: 100vh;
@@ -47,4 +44,75 @@
         left: 0;
         z-index: -1;
     }
+
+    .gallery-discription {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 0.25fr 1.75fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: start;
+
+        width: 100%;
+        padding: clamp(0.5rem, -0.0573rem + 2.5478vw, 3rem);
+    }
+
+    #id {
+        grid-row: 1;
+        grid-column: 1;
+        padding-inline: 0.2rem;
+    }
+
+    #heading {
+        grid-row: 1 / 3;
+        grid-column: 2 / 3;
+        padding-inline: clamp(0.5rem, -0.1688rem + 3.0573vw, 3.5rem);
+    }
+
+    h1 {
+        font-size: clamp(1.631875rem, 1.3582rem + 1.3681vw, 3rem);
+    }
+
+    h2 {
+        font-size: clamp(0.870625rem, 0.7248rem + 0.7294vw, 1.6rem);
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    span {
+        font-size: inherit;
+    }
+
+    /* class for .gallery-discription positioning and colors */
+        .top {
+        top: max(4rem, 2vw);
+    }
+
+    .middle {
+        top: 40%;
+    }
+
+    .bottom {
+        bottom: max(4rem, 2vw);
+    }
+
+    .red {color: red}
+
+    .blue {color: blue}
+
+    .white {color: white}
+
+    .yellow {color: rgb(255, 196, 0)}
+
+    .green {color: green}
+
+    /** ---- media queries ---- */
+
+    @media (min-width: 700px) {
+		.gallery-discription {
+            width: 62%;
+        }
+	}
 </style>

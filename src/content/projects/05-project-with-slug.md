@@ -1,8 +1,9 @@
 ---
-title: "Bardo"
+id: "05"
+title: "A walk in a Mermaid's shoes"
 description: "Die Begegnung zwischen Nirvana und Reinkarnation"
-position: "top"
-color: "red"
+position: "middle"
+color: "blue"
 year: 2021
 coverImage: {
     url: "/projectImg/bardo/cover.jpg",
