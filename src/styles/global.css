@@ -76,7 +76,7 @@ select {
   }
 }
 
-/* TODO: set mini width of 200px*/
+/* TODO: set mini width of 320px*/
 
 /* Fonts and Font colors */
 
@@ -99,4 +99,27 @@ body {
 
 .color-secondary {
   color: var(--color-secondary);
+}
+
+#toggle-button{
+  position:absolute;
+  bottom: 1em;
+  right: 1em;
+  position: fixed;
+  z-index: 9999;
+
+  font-size: 1.8rem;
+  width: 1.5em;
+  aspect-ratio: 1;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #f5d9ce;
+  mix-blend-mode:difference;
+}
+
+@media (min-width: 700px) {
+  #navbar-toggle {
+    display: none;
+  }
 }
