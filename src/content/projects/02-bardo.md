@@ -2,7 +2,7 @@
 id: "02"
 title: "Bardo"
 description: "Die Begegnung zwischen Nirvana und Reinkarnation. This sentence is to test how the description spans"
-position: "bottom"
+position: "top"
 color: "red"
 year: 2021
 coverImage: {

@@ -1,15 +1,16 @@
 ---
-id: "06"
-title: "Another one bites the dust"
+id: "05"
+title: "A walk in a Mermaid's shoes"
 description: "Die Begegnung zwischen Nirvana und Reinkarnation"
-position: "top"
-color: "green"
+position: "middle"
+color: "blue"
 year: 2021
 coverImage: {
-    url: "/projectImg/OHNEZWEI/cover.jpg",
+    url: "/projectImg/bardo/cover.jpg",
     alt: "Bardo Poster",
 }
 images : []
+
 ---
 magna eiusmod do enim ullamco ad ea adipiscing qui sit cupidatat commodo sunt laboris laboris ipsum. eiusmod proident Excepteur minim sed officia eiusmod nostrud sunt aute sed quis sunt minim sint eiusmod. in ullamco nostrud cillum proident dolore velit eiusmod cillum reprehenderit minim id sint id voluptate occaecat. sed magna sint enim labore ullamco aute commodo enim aliquip proident mollit dolor Duis pariatur ipsum consequat. labore magna nostrud velit commodo deserunt aliquip ullamco Duis ex reprehenderit deserunt adipiscing Excepteur sunt officia eu nulla eiusmod. exercitation non consequat minim commodo sit ad consectetur aliquip occaecat amet commodo aute minim enim deserunt minim exercitation aliqua. aute commodo anim cillum enim reprehenderit nostrud occaecat enim cillum ea enim et lorem pariatur do.
 
