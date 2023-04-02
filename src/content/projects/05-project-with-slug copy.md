@@ -2,7 +2,7 @@
 id: "05"
 title: "A walk in a Mermaid's shoes"
 description: "Die Begegnung zwischen Nirvana und Reinkarnation"
-position: "middle"
+position: "bottom"
 color: "blue"
 year: 2021
 coverImage: {
