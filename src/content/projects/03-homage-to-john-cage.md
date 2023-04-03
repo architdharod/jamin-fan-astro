@@ -8,6 +8,7 @@ year: 1995
 coverImage: {
     url: "/projectImg/homage-to-john-cage/cover.jpg",
     alt: "Hommage to John Cage POSTER",
+    caption: "This is a caption for this cover image!"
 }
 images : []
 

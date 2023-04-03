@@ -8,6 +8,7 @@ year: 2021
 coverImage: {
     url: "/projectImg/bardo/cover.jpg",
     alt: "Bardo Poster",
+    caption: "This is a caption for the Bardo cover image!"
 }
 images : []
 

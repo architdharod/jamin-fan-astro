@@ -69,6 +69,8 @@ const proj = await getCollection('projects');
 		height: 100vh;
 		padding: clamp(0.8rem, 0.5442rem + 2.0465vw, 3rem);
 
+		min-width: 320px;
+
 		overflow-y: scroll;
 		background-color: #f5d9ce;
 
@@ -140,6 +142,7 @@ const proj = await getCollection('projects');
 	@media (min-width: 700px) {
 		header {
 			display: block !important;
+			min-width: 200px;
 			padding: clamp(0.8rem, 0.5442rem + 2.0465vw, 3rem);
 			width: 38%;
 			z-index: 1;

@@ -8,6 +8,7 @@ year: 2020
 coverImage: {
     url: "/projectImg/OHNEZWEI/cover.jpg",
     alt: "OHNEZWEI POSTER",
+    caption: "This is a caption for this cover image!"
 }
 images : []
 

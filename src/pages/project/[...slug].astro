@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { SITE_TITLE } from "../../consts";
+import ProjectImage from "../../components/ProjectImage.astro";
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -18,12 +19,42 @@ export async function getStaticPaths() {
 const {entry} = Astro.props;
 const {Content} = await entry.render();
 ---
-
 <BaseLayout title={entry.data.title + " - " + SITE_TITLE} description={entry.data.description}>
-    <h1>{entry.data.title}</h1>
-    <img 
-        src={entry.data.coverImage.url}
-        alt={entry.data.coverImage.alt}
-    />  
-    <Content/>  
+    <main>
+        <div class="proj-title">
+            <h2 class="font-space-mono color-secondary">PROJECT {entry.data.id}</h2>
+            <h1 class="font-rubik color-primary">{entry.data.title}</h1>
+        </div>
+        <ProjectImage 
+            src={entry.data.coverImage.url}
+            alt={entry.data.coverImage.alt}
+            caption={entry.data.coverImage.caption}
+        />
+        <Content class="font-rubik color-primary"/>
+    </main>
 </BaseLayout>
+
+<style>
+    main {
+        width: 100%;
+        padding: clamp(1rem, 0.6rem + 2vw, 3rem);
+    }
+
+    .proj-title {
+        padding-bottom: 2em;
+    }
+
+    h2 {
+        font-size: clamp(0.761625rem, 0.634rem + 0.6384vw, 1.4rem);
+    }
+
+    h1 {
+        font-size: clamp(1.631875rem, 1.3582rem + 1.3681vw, 3rem);
+    }
+
+    @media (min-width: 700px) {
+		main {
+            width: 62%;
+        }
+	}
+</style>

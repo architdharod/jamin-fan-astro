@@ -8,6 +8,7 @@ year: 2020
 coverImage: {
     url: "/projectImg/mudra/cover.jpg",
     alt: "Mudra Poster",
+    caption: "This is a caption for this cover image!"
 }
 images : []
 

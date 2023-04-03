@@ -1,0 +1,29 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props {
+    src: string,
+    alt: string,
+    caption: string,
+    class?: string,
+    props?: HTMLAttributes<'img'>
+}
+
+const { src, alt, class: className, caption, ...props } = Astro.props;
+---
+<div class="project-img">
+    <img
+        src={src}
+        alt={alt}
+        {...props}
+    />
+    <h3 class="font-space-mono color-secondary">{caption}</h3>
+</div>
+
+<style>
+    h3 {
+        font-size: clamp(0.76125rem, 0.6335rem + 0.6387vw, 1.4rem);
+        padding: 1em 0 1em 0;
+        border: red 1px solid;
+    }
+</style>
