@@ -19,6 +19,7 @@
     padding: 1em 0 1em 0;
     font-family: 'Space Mono';
     color: var(--color-secondary);
+    text-align: center;
 }
 
 .markdown-formatting p {
