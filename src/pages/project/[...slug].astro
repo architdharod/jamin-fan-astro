@@ -23,7 +23,7 @@ const {Content} = await entry.render();
 <BaseLayout title={entry.data.title + " - " + SITE_TITLE} description={entry.data.description}>
     <main>
         <div class="proj-title">
-            <h2 class="font-space-mono color-secondary">PROJECT {entry.data.id}</h2>
+            <h2 class="font-space-mono color-secondary">PROJECT {entry.data.id} // {entry.data.year}</h2>
             <h1 class="font-rubik color-primary">{entry.data.title}</h1>
         </div>
         <ProjectImage 

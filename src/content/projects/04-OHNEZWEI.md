@@ -1,16 +1,35 @@
 ---
 id: "04"
-title: "OHNEZWEI"
-description: "sed magna sint enim labore ullamco aute commodo"
-position: "top"
+title: "OHNEZWEI 無"
+description: "Ein Wort aus dem Buddhismus beschreibt einen unbegrenzten Zustand. Leere, ein Ohne, ein Vakuum und auch das Nirwana."
+position: "bottom"
 color: "white"
-year: 2020
+year: 2019
 coverImage: {
-    url: "/projectImg/OHNEZWEI/cover.jpg",
-    alt: "OHNEZWEI POSTER",
+    url: "/projectImg/mudra/cover.jpg",
+    alt: "Mudra Poster",
     caption: "This is a caption for this cover image!"
 }
 ---
-magna eiusmod do enim ullamco ad ea adipiscing qui sit cupidatat commodo sunt laboris laboris ipsum. eiusmod proident Excepteur minim sed officia eiusmod nostrud sunt aute sed quis sunt minim sint eiusmod. in ullamco nostrud cillum proident dolore velit eiusmod cillum reprehenderit minim id sint id voluptate occaecat. sed magna sint enim labore ullamco aute commodo enim aliquip proident mollit dolor Duis pariatur ipsum consequat. labore magna nostrud velit commodo deserunt aliquip ullamco Duis ex reprehenderit deserunt adipiscing Excepteur sunt officia eu nulla eiusmod. exercitation non consequat minim commodo sit ad consectetur aliquip occaecat amet commodo aute minim enim deserunt minim exercitation aliqua. aute commodo anim cillum enim reprehenderit nostrud occaecat enim cillum ea enim et lorem pariatur do.
-
-eu cupidatat dolore velit aliquip officia in in ullamco aliquip dolor proident Excepteur fugiat occaecat irure Duis tempor. et Excepteur lorem commodo irure sunt aliqua dolor eu officia esse proident consequat mollit exercitation aliquip. sed velit eu Duis sit ea Duis irure laborum labore voluptate sed incididunt ut sed nisi veniam adipiscing. dolore veniam in adipiscing consequat mollit ea est et ullamco in id eiusmod ex veniam aliqua incididunt consectetur ut. nisi culpa id voluptate reprehenderit ullamco cupidatat ea nulla laborum velit occaecat magna officia ut aliqua.
+Jasmine Fan inszeniert die Vorstellung, dass die Welt oder das Sein nicht aus
+getrennten festen Dingen besteht, sondern aus Kräften oder Schwingungen,
+die sich wie beim Tanz ineinander wandeln.
+Um dieses Gefühl des Zusammenhangs aller Dinge und die Auflösung der
+Gegensätze erlebbar zu machen, teilt sie den Raum mit einer
+lichtdurchlässigen Leinwand, auf die Bewegungen aus dem Alltag projiziert
+werden. Rechts und links davon sitzt das Publikum. Die Zuschauer*innen
+werden zu einem undeutlichen Spiegelbild ihrer selbst und des
+Bühnengeschehens. Drei Tänzer*innen bewegen sich über die geteilte Bühne
+und weichen die Grenzen zwischen Traum, Wirklichkeit, Alltag und Theater
+auf.
+<br>
+<br>
+Konzept: Jasmine Fan<br>
+Choreografie und Tanz : Jasmine Fan, Marion Sparber, Alan Fuentes Guerra<br>
+Künstlerische Leitung : Jasmine Fan<br>
+Film: Jasmine Fan<br>
+Musik: Sum-Sum Shen, Ilya Selikhov<br>
+Kamera: Tobias Hoops<br>
+Assistenz: Doria Worden, Valerie Witt<br>
+Produktion: IDEA – Tanz Theater Performance, Jasmine Fan, Marion Sparber<br>
+Produktionsleitung: Doris Plankl<br>

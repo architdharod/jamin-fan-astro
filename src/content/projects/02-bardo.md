@@ -1,16 +1,45 @@
 ---
 id: "02"
-title: "Bardo"
-description: "Die Begegnung zwischen Nirvana und Reinkarnation. This sentence is to test how the description spans"
-position: "top"
-color: "red"
+title: "BARDO"
+description: "Death as the wisdom of life"
+position: "bottom"
+color: "white"
 year: 2021
 coverImage: {
-    url: "/projectImg/bardo/cover.jpg",
-    alt: "Bardo Poster",
-    caption: "This is a caption for the Bardo cover image!"
+    url: "/projectImg/mudra/cover.jpg",
+    alt: "Mudra Poster",
+    caption: "This is a caption for this cover image!"
 }
 ---
-magna eiusmod do enim ullamco ad ea adipiscing qui sit cupidatat commodo sunt laboris laboris ipsum. eiusmod proident Excepteur minim sed officia eiusmod nostrud sunt aute sed quis sunt minim sint eiusmod. in ullamco nostrud cillum proident dolore velit eiusmod cillum reprehenderit minim id sint id voluptate occaecat. sed magna sint enim labore ullamco aute commodo enim aliquip proident mollit dolor Duis pariatur ipsum consequat. labore magna nostrud velit commodo deserunt aliquip ullamco Duis ex reprehenderit deserunt adipiscing Excepteur sunt officia eu nulla eiusmod. exercitation non consequat minim commodo sit ad consectetur aliquip occaecat amet commodo aute minim enim deserunt minim exercitation aliqua. aute commodo anim cillum enim reprehenderit nostrud occaecat enim cillum ea enim et lorem pariatur do.
+What comes after, when one day we must say goodbye to the world? Is
+there consciousness after death?Which longings draw us back to life?
+BARDO tells the story of the encounter in the transitional realm of Bardo
+between the young deceased monk, Duoje, and his teacher, Sun-Moon-
+Light. In this place, described in Tibetan Buddhism as the space between
+heaven, hell, and rebirth, Duoje's soul is faced with the choice between
+dissolution in Nirvana or rebirth in a real human body. Taking the form of both
+a live performance and a live-stream, the choreographic sequences that
+embody these innerconflicts form dialogues between the two souls in Bardo,
+immersing the viewer's gaze in the story. The audience is allowed to move
+freely between the performers, experiencing the accompanying camera,
+which directs the perspective of the viewers to intentional points in the
+choreography, through live projection.
+<br>
+<br>
+Concept / Choreography / Artistic Direction: Jasmine Fan <br>
+Performers: Damien Fournier, Victor Mateos Arellano, Isabella Boldt, Tien Yi-
+Wei, Kai-Chun Chuang, Janan Laubscher, Nils Löfke <br>
+Camera: Martin Klukas<br>
+Composition / Sound Design: Lorenzo Romano<br>
+Costume Design: Julio Escudero<br>
+Stage Design: Yi-Jou Chuang<br>
+Stage Assistant : Mu-Heng Tsai<br>
+Light Design / Photography: Tobias Hoops<br>
+Technical Director: Doria Worden<br>
+Dramaturgy: Jean-Claude Mondot<br>
+Sound Technician : Robert Prior<br>
+Stream/Video: Diana Sanchez<br>
+Productions Manager : Jesse Oesterling<br>
 
-eu cupidatat dolore velit aliquip officia in in ullamco aliquip dolor proident Excepteur fugiat occaecat irure Duis tempor. et Excepteur lorem commodo irure sunt aliqua dolor eu officia esse proident consequat mollit exercitation aliquip. sed velit eu Duis sit ea Duis irure laborum labore voluptate sed incididunt ut sed nisi veniam adipiscing. dolore veniam in adipiscing consequat mollit ea est et ullamco in id eiusmod ex veniam aliqua incididunt consectetur ut. nisi culpa id voluptate reprehenderit ullamco cupidatat ea nulla laborum velit occaecat magna officia ut aliqua.
+<br><br>
+Support by:
