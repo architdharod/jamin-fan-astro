@@ -2,12 +2,12 @@
 id: "04"
 title: "OHNEZWEI 無"
 description: "Ein Wort aus dem Buddhismus beschreibt einen unbegrenzten Zustand. Leere, ein Ohne, ein Vakuum und auch das Nirwana."
-position: "bottom"
-color: "white"
+position: "top"
+color: "red"
 year: 2019
 coverImage: {
-    url: "/projectImg/mudra/cover.jpg",
-    alt: "Mudra Poster",
+    url: "/projectImg/OHNEZWEI/cover.webp",
+    alt: "OHNEWEI Poster",
     caption: "This is a caption for this cover image!"
 }
 ---
@@ -22,8 +22,14 @@ werden zu einem undeutlichen Spiegelbild ihrer selbst und des
 Bühnengeschehens. Drei Tänzer*innen bewegen sich über die geteilte Bühne
 und weichen die Grenzen zwischen Traum, Wirklichkeit, Alltag und Theater
 auf.
+
+![OHNEZWEI](/projectImg/OHNEZWEI/ohnezwei-1.webp)
+
 <br>
+
+![OHNEZWEI](/projectImg/OHNEZWEI/ohnezwei-2.webp)
 <br>
+
 Konzept: Jasmine Fan<br>
 Choreografie und Tanz : Jasmine Fan, Marion Sparber, Alan Fuentes Guerra<br>
 Künstlerische Leitung : Jasmine Fan<br>

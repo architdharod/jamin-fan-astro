@@ -6,9 +6,9 @@ position: "bottom"
 color: "white"
 year: 2020
 coverImage: {
-    url: "/projectImg/mudra/cover.jpg",
+    url: "/projectImg/mudra/cover.webp", 
     alt: "Mudra Poster",
-    caption: "This is a caption for this cover image!"
+    caption: "Photography: Tobias Hoops"
 }
 ---
 Mudra is an Indian word, rooted in Hinduism, that denotes a single symbolic
@@ -21,6 +21,10 @@ is explored with the underlying context of the choreographer's personal
 search for the connection between her new European culture and her
 Taiwanese roots.
 <br>
+
+![Official Mudra Poster](/projectImg/mudra/mudra-poster.webp)
+![Mudra Performance](/projectImg/mudra/mudra-1.webp)
+![Mudra Performance](/projectImg/mudra/mudra-3.webp)
 <br>
 Concept & Choreography: Jasmine Fan<br>
 Artistic direction: Jasmine Fan<br>

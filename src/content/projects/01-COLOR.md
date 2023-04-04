@@ -3,12 +3,12 @@ id: "01"
 title: "COLOR ⾊"
 description: "Watch - Observe - Control"
 position: "bottom"
-color: "white"
+color: "red"
 year: 2023
 coverImage: {
-    url: "/projectImg/mudra/cover.jpg",
-    alt: "Mudra Poster",
-    caption: "This is a caption for this cover image!"
+    url: "/projectImg/COLOR/cover.webp",
+    alt: "COLOR Poster",
+    caption: "Photography: Tobias Hoops"
 }
 ---
 Jasmine Fan presents her new dance performance "COLOR ⾊" live at the
@@ -18,7 +18,10 @@ have the longing in us to observe other people? In Mandarin, the word
 color is about the sliding transitions from neutral observing to protecting to
 monitoring. 
 <br>
+
+![Poster for the COLORS dance performance](/projectImg/COLOR/poster.webp)
 <br>
+
 The spatial installation does not separate the audience and stage areas; the
 audience, guided by the dancer, can move freely in the performance space.
 The central compositional means consist of the choreography and miniature
@@ -31,9 +34,7 @@ developed in collaboration with the engineering group "Art Power" from
 Taiwan, which has meanwhile created various innovative high-tech
 installations for the performing arts.
 
-![From spiritual worlds to a consumer society, from divinity to profanity](/projectImg/mudra/mudra-poster.jpg)
-
-### From spiritual worlds to a consumer society, from divinity to profanity
+<br>
 
 With her multimedia dance performance, Taiwan-born Jasmine Fan and an
 international team explore the interrelationships of observation and
@@ -50,9 +51,8 @@ dance performance is intended to stimulate reflection on the widespread
 ignorance of modern societies towards the effects of increasing surveillance
 on our lives.
 
-![Later adopted by Buddhism, mudras present a direct link to the enlightened self and the energy needed to find it.](/projectImg/mudra/mudra-2.jpg)
-
-### Later adopted by Buddhism, mudras present a direct link to the enlightened self and the energy needed to find it.
+<br>
+<br>
 
 This project is supported by the NATIONAL PERFORMANCE NETWORK -
 STEPPING OUT, funded by the Federal Government Commissioner for

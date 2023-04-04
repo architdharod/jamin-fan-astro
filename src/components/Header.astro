@@ -8,7 +8,11 @@ const proj = await getCollection('projects');
 <header>
 	<nav>
 		<div>
-			<h2 class="font-space-mono color-secondary">Jasmine FAN Choreographer, Curator, Artist</h2>
+			<h2 class="font-space-mono color-secondary home">
+				<a href="/">
+					Jasmine FAN Choreographer, Curator, Artist
+				</a>
+			</h2>
 			<h1 class="font-rubik color-primary">Synthesis of Rhythm: A Multidisciplinary Dance Odyssey</h1>
 		</div>
 
@@ -142,7 +146,7 @@ const proj = await getCollection('projects');
 		font-size: clamp(1.088125rem, 0.9058rem + 0.9119vw, 2rem);
 	}
 
-	p :is(a) {
+	p :is(a), .home a {
 		text-decoration: none;
 		color: inherit;
 		font-weight: 600;

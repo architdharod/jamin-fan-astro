@@ -6,9 +6,9 @@ position: "bottom"
 color: "white"
 year: 2017
 coverImage: {
-    url: "/projectImg/mudra/cover.jpg",
+    url: "/projectImg/AWMS/cover.webp",
     alt: "Mudra Poster",
-    caption: "This is a caption for this cover image!"
+    caption: "As she see her shadow, there is no one can stand like her"
 }
 ---
 If mermaids are refugees from the sea, what could their dreams be about?
@@ -18,6 +18,14 @@ emotionally conflictual situations. Just as the author did while dancing through
 the seasons of life. If we all walk in mermaid’s shoes, aren’t we all connected
 while we go our own different ways?
 <br>
+
+![Scenes from the film "A walk in Mermaid's Shoes"](/projectImg/AWMS/awms-1.webp)
+<br>
+
+![Scenes from the film "A walk in Mermaid's Shoes"](/projectImg/AWMS/awms-2.webp)
+<br>
+
+![Scenes from the film "A walk in Mermaid's Shoes"](/projectImg/AWMS/awms-3.webp)
 <br>
 Producer: Jasmine Fan<br>
 Executive Producer: Jasmine Fan, Ray Juster<br>
