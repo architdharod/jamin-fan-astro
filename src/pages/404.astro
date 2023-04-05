@@ -4,8 +4,51 @@ import { SITE_DESCRIPTION } from "../consts";
 ---
 
 <BaseLayout title="404" description={SITE_DESCRIPTION}>
-    OOPS <br/>
-    sed occaecat cillum culpa non cillum nulla officia enim id dolor reprehenderit nisi Duis irure 
-    eiusmod minim id non mollit cillum ex mollit dolore do consequat ad culpa
-    irure dolor amet sunt ipsum commodo eu sunt sunt deserunt dolore sunt irure.
+    <main>
+        <video autoplay loop muted playsinline width="250">
+            <source src="/404.webm" type="video/webm">
+        </video>
+        <div class="site-description font-rubik">
+            <h1>404:<br> Page not found</h1>
+        </div>
+    </main>
 </BaseLayout>
+
+<style>
+    main {
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .site-description {
+        position: absolute;
+        width: 100%;
+        padding: 2em;
+        top: 50%;
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+
+    h1 {
+        font-size: 8rem;
+        text-align: center;
+        color: rgb(187, 69, 42);
+    }
+
+    video {
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    @media (min-width: 700px) {
+		.site-description {
+            width: 62%;
+        }
+	}
+</style>
