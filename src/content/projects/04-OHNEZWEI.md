@@ -1,6 +1,6 @@
 ---
 id: "04"
-title: "OHNEZWEI 無"
+title: "OHNEZWEI 無二"
 description: "Ein Wort aus dem Buddhismus beschreibt einen unbegrenzten Zustand. Leere, ein Ohne, ein Vakuum und auch das Nirwana."
 position: "top"
 color: "red"

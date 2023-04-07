@@ -82,6 +82,10 @@ body {
 }
 
 /* Fonts and Font colors */
+.changing-title{
+  font-size: clamp(1.631875rem, 1.3582rem + 1.3681vw, 3rem);
+  line-height: 1.2;
+}
 
 .font-rubik {
   font-family: 'Rubik', 'sans-serif';

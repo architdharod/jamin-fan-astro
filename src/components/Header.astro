@@ -2,6 +2,7 @@
 import HeaderLink from './HeaderLink.astro';
 import { getCollection } from 'astro:content';
 import Toggler from './Toggler.astro';
+import {RandTitle} from "./RandomTitle";
 const proj = await getCollection('projects');
 ---
 <Toggler />
@@ -13,7 +14,7 @@ const proj = await getCollection('projects');
 					Jasmine FAN Choreographer, Curator, Artist
 				</a>
 			</h2>
-			<h1 class="font-rubik color-primary">Synthesis of Rhythm: A Multidisciplinary Dance Odyssey</h1>
+			<RandTitle />
 		</div>
 
 		<div>
@@ -78,6 +79,10 @@ const proj = await getCollection('projects');
 		<p class="nav-footer font-rubik color-primary">Website by <a href="https://dharod.de" target="_blank">Archit Dharod</a> • Layout inspired by <a href="https://cargo.site/" target="_blank">cargo.site</a></p>
 	</nav>
 </header>
+
+<script>
+	
+</script>
 
 <style>
 	header {
