@@ -10,18 +10,7 @@ coverImage: {
     alt: "OHNEWEI Poster",
     caption: "This is a caption for this cover image!"
 }
-support: [
-    {
-        url: "/projectImg/OHNEZWEI/cover.webp",
-        alt: "OHNEWEI Poster"
-    }
-]
-thanks: [
-    {
-        url: "/projectImg/OHNEZWEI/cover.webp",
-        alt: "OHNEWEI Poster"
-    }
-]
+
 ---
 Jasmine Fan inszeniert die Vorstellung, dass die Welt oder das Sein nicht aus
 getrennten festen Dingen besteht, sondern aus Kräften oder Schwingungen,

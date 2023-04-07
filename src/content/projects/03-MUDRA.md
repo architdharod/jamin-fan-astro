@@ -10,6 +10,34 @@ coverImage: {
     alt: "Mudra Poster",
     caption: "Photography: Tobias Hoops"
 }
+support: [
+    {
+        url: "/projectImg/mudra/support/01_Hintergrund.png",
+        alt: "Hamburg Behörde für Kultur und Medien Logo"
+    },
+    {
+        url: "/projectImg/mudra/support/02_image002.png",
+        alt: "Hamburgische Kultur Stiftung Logo"
+    },
+    {
+        url: "/projectImg/mudra/support/03_Asset 55.png",
+        alt: "Dachberband freie darstellende Künste Hamburg e.V. Logo"
+    },
+    {
+        url: "/projectImg/mudra/support/04_image010 Kopie.png",
+        alt: "pflanzmich.de Logo"
+    },
+    {
+        url: "/projectImg/mudra/support/05_logo_lhtheater_18_rgb_lhweb Kopie 2.png",
+        alt: "LICHTHOF THEATER Logo"
+    }
+]
+thanks: [
+    {
+        url: "/projectImg/mudra/thanks/logo.png",
+        alt: "Galerie Stobbe Paidere Mondot Logo"
+    }
+]
 ---
 Mudra is an Indian word, rooted in Hinduism, that denotes a single symbolic
 hand gesture, of which there are many, also found in everyday life. Later
@@ -22,6 +50,7 @@ search for the connection between her new European culture and her
 Taiwanese roots.
 <br>
 
+![Official Mudra Poster](/projectImg/mudra/cover-2.webp)
 ![Official Mudra Poster](/projectImg/mudra/mudra-poster.webp)
 ![Mudra Performance](/projectImg/mudra/mudra-1.webp)
 ![Mudra Performance](/projectImg/mudra/mudra-3.webp)

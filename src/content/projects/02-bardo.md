@@ -66,6 +66,8 @@ dissolution in Nirvana or rebirth in a real human body.
 
 ![What comes after, when one day we must say goodbye to the world?](/projectImg/bardo/bardo-1.webp)
 
+![What comes after, when one day we must say goodbye to the world?](/projectImg/bardo/poster.webp)
+
 Taking the form of both
 a live performance and a live-stream, the choreographic sequences that
 embody these innerconflicts form dialogues between the two souls in Bardo,
