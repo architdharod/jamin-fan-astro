@@ -1,0 +1,96 @@
+---
+interface Props {
+  support?: {
+    url: string,
+    alt: string
+  }[],
+  thanks?: {
+    url: string,
+    alt: string
+  }[],
+}
+
+const { support , thanks } = Astro.props;
+---
+<footer>
+    {
+        support 
+        
+        && 
+
+        <h2 class="font-space-mono color-secondary">Supported by:</h2>
+            <div class="supported-by">
+                {
+                    support.map(eachSupporter => {
+                        return (
+                            <img
+                                src={eachSupporter.url}
+                                alt={eachSupporter.alt}
+                            />
+                        )
+                    })
+                }
+            </div>
+    }
+
+    {
+        thanks 
+
+        &&
+
+        <h2 class="font-space-mono color-secondary">Thanks to:</h2>
+            <div class="thanks-to">
+                {
+                    thanks.map(eachThankee => {
+                        return (
+                            <img
+                                src={eachThankee.url}
+                                alt={eachThankee.alt}
+                            />
+                        )
+                    })
+                }
+            </div>
+    }
+
+
+    <h2 class="font-space-mono color-secondary"><a href="/">HOME</a></h2>
+
+</footer>
+
+
+<style>
+    h2 {
+        font-size: clamp(0.761625rem, 0.634rem + 0.6384vw, 1.4rem);
+        padding: 3em 0 0.8em 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .supported-by {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: clamp(1rem, 0.7771rem + 1.0191vw, 2rem);
+    }
+
+    .supported-by img {
+        height: clamp(2.5rem, 1.9427rem + 2.5478vw, 5rem);   
+        filter: grayscale(30%);
+    }
+    
+    .thanks-to {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: clamp(1rem, 0.7771rem + 1.0191vw, 2rem);
+    }
+
+    .thanks-to img {
+        height: clamp(2.5rem, 1.9427rem + 2.5478vw, 5rem);   
+        filter: grayscale(30%);
+    }
+</style>
