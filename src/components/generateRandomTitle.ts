@@ -39,7 +39,7 @@ export function getRandomTitle(): string {
         "Merging Realities: Choreographing a Tapestry of Experiences",
         "Embodying Intangible: The Intertwining of Art, Culture, and Soul",
     ];
-  
+    
     const randomIndex = Math.floor(Math.random() * titles.length);
     return titles[randomIndex];
   }
