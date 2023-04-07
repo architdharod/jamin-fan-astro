@@ -76,7 +76,6 @@ select {
   }
 }
 
-/* TODO: set mini width of 320px*/
 body {
   min-width: 320px;
 }

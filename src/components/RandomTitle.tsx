@@ -1,5 +1,4 @@
 import "../styles/global.css"
-import React from "react";
 import { getRandomTitle } from "./generateRandomTitle";
 
 export function RandTitle() {

@@ -10,6 +10,52 @@ coverImage: {
     alt: "COLOR Poster",
     caption: "Photography: Tobias Hoops"
 }
+support: [
+    {
+        url: "/projectImg/COLOR/01-support.jpg",
+        alt: "Nationales Performance Netz Logo"
+    },
+    {
+        url: "/projectImg/COLOR/02-support.JPG",
+        alt: "Neustart Kultur Logo"
+    },
+    {
+        url: "/projectImg/COLOR/03-support.png",
+        alt: "Die Beauftragte der Bundesregierung für Kultur und Medien Logo"
+    },{
+        url: "/projectImg/COLOR/04-support.jpg",
+        alt: "Ministry of Culture - Republic of china (Taiwan) Logo"
+    },
+    {
+        url: "/projectImg/COLOR/05-support.png",
+        alt: "WIESE Logo"
+    }
+]
+thanks: [
+    {
+        url: "/projectImg/COLOR/01-thanks.png",
+        alt: "EPSON Logo"
+    },
+    {
+        url: "/projectImg/COLOR/02-thanks.jpg",
+        alt: "CND Logo"
+    },
+    {
+        url: "/projectImg/COLOR/03-thanks.png",
+        alt: "thessaloniki cinedance international Logo"
+    },{
+        url: "/projectImg/COLOR/04-thanks.png",
+        alt: "die Wolke art group Logo"
+    },
+    {
+        url: "/projectImg/COLOR/05-thanks.png",
+        alt: "pflanzmich.de Logo"
+    },
+    {
+        url: "/projectImg/COLOR/06-thanks.jpg",
+        alt: ".skg STAY Logo"
+    }
+]
 ---
 Jasmine Fan presents her new dance performance "COLOR ⾊" live at the
 cultural center of WIESE e. G. from May 18 to 20, 2023 . She writes: "Do we
