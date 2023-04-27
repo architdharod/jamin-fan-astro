@@ -18,19 +18,6 @@ const proj = await getCollection('projects');
 		</div>
 
 		<div>
-			<h2 class="font-space-mono color-secondary">NEWS</h2>
-			<p class="font-rubik">
-				<a href="https://tikkio.com/organizer/10893-jasmine-fan" target="_blank">
-					18.05.2023 COLOR ⾊ Premier in Wiese. e. G.
-				</a>
-				<br>
-				<a href="https://tikkio.com/organizer/10893-jasmine-fan" target="_blank">
-					19.05.2023 - 20.05.2023 COLOR ⾊ performance in Wiese e. G.
-				</a>
-			</p>
-		</div>
-
-		<div>
 			<h2 class="font-space-mono color-secondary">PROJECTS</h2>
 			<ul>
 				{proj.map(element =>(
@@ -55,6 +42,35 @@ const proj = await getCollection('projects');
 				<br>
 				
 			</p>
+		</div>
+
+		<div>
+			<h2 class="font-space-mono color-secondary">NEWS</h2>
+			<p class="font-rubik">
+				<a href="https://tikkio.com/organizer/10893-jasmine-fan" target="_blank">
+					COLOR ⾊ Premier in Wiese. e. G. <br>(18th May 2023)
+				</a>
+				<br>
+				<br>
+				<a href="https://tikkio.com/organizer/10893-jasmine-fan" target="_blank">
+					COLOR ⾊ performance in Wiese e. G. <br>(19-20 May 2023)
+				</a>
+			</p>
+		</div>
+		
+		<div>
+			<h2 class="font-space-mono color-secondary">CLICK HERE FOR TICKETS:</h2>
+			<a href="https://tikkio.com/organizer/10893-jasmine-fan" target="_blank">
+				<img class="tickets-img" src="/colors-ticket.jpeg">
+			</a>
+		</div>
+
+		<div>
+			<h2 class="font-space-mono  color-secondary">CONTACT</h2>
+			<p class="font-rubik color-primary">
+				jasmine@jasminefan.de <br>
+				Phone: +49 176 31620022<br>
+			</p>
 			<div class="social-media">
 				<a href="https://www.instagram.com/jasminefan_choreographer/" target="#">
 					<i class="bi bi-instagram color-primary"></i>
@@ -66,14 +82,6 @@ const proj = await getCollection('projects');
 					<i class="bi bi-vimeo color-primary"></i>
 				</a>
 			</div>
-		</div>
-
-		<div>
-			<h2 class="font-space-mono color-secondary">CONTACT</h2>
-			<p class="font-rubik color-primary">
-				jasmine@jasminefan.de <br>
-				Phone: +49 176 31620022<br>
-			</p>
 		</div>
 
 		<p class="nav-footer font-rubik color-primary">Website by <a href="https://dharod.de" target="_blank">Archit Dharod</a> • Layout inspired by <a href="https://cargo.site/" target="_blank">cargo.site</a></p>
@@ -145,6 +153,10 @@ const proj = await getCollection('projects');
 		display: flex;
 		gap: 0.8em;
 		font-size: clamp(1.088125rem, 0.9058rem + 0.9119vw, 2rem);
+	}
+
+	.tickets-img {
+		border: 2px solid black;	
 	}
 
 	p :is(a), .home a {
