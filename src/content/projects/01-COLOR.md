@@ -2,7 +2,7 @@
 id: "01"
 title: "COLOR ⾊"
 description: "Watch - Observe - Control"
-position: "bottom"
+position: "top"
 color: "red"
 year: 2023
 coverImage: {

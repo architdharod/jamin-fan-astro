@@ -3,7 +3,7 @@ id: "03"
 title: "MUDRA"
 description: "From spiritual worlds to a consumer society, from divinity to profanity"
 position: "bottom"
-color: "white"
+color: "blue"
 year: 2020
 coverImage: {
     url: "/projectImg/mudra/cover.webp", 

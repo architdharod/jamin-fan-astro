@@ -8,7 +8,7 @@ const ProjectCovers = await getCollection('projects');
     {
         ProjectCovers.map(cover =>(
             <section>
-                <img src={cover.data.coverImage.url} alt={cover.data.coverImage.alt}/>
+                <img class="cover-img" src={cover.data.coverImage.url} alt={cover.data.coverImage.alt}/>
                 
                 <div class={`gallery-discription ${cover.data.position} ${cover.data.color}`}>
                     <h1 id="id" class="font-rubik">{cover.data.id}</h1>
@@ -35,7 +35,7 @@ const ProjectCovers = await getCollection('projects');
         position: relative;
     }
 
-    img {
+    .cover-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
