@@ -1,62 +1,59 @@
 ---
-id: "02"
-title: "BARDO"
-description: "Death as the wisdom of life"
-position: "top"
-color: "yellow"
+id: '02'
+title: 'BARDO'
+description: 'Death as the wisdom of life'
+position: 'top'
+color: 'yellow'
 year: 2021
-coverImage: {
-    url: "/projectImg/bardo/cover.webp",
-    alt: "BARDO cover image",
-    caption: "Photography: Tobias Hoops"
-}
-support: [
+coverImage:
+  {
+    url: '/projectImg/bardo/cover.webp',
+    alt: 'BARDO cover image',
+    caption: 'Photography: Tobias Hoops',
+  }
+support:
+  [
     {
-        url: "/projectImg/bardo/support/01_DAKU_Logokombi_03-01.jpg",
-        alt: "NEU START KULTUR Logo"
-    },
-        {
-        url: "/projectImg/bardo/support/02_NPN_schwarz.jpg",
-        alt: "Nationales Performance Netz Logo"
-    },
-        {
-        url: "/projectImg/bardo/support/03_BKM_2017_Office_Farbe_de.png",
-        alt: "Die Beauftragte der Bundesregierung für Kultur und Medien Logo"
-    },
-        {
-        url: "/projectImg/bardo/support/04_BKM_Neustart_Logo.jpg",
-        alt: "Neue Start Kultur Logo"
-    },
-        {
-        url: "/projectImg/bardo/support/05_claussen-simon.png",
-        alt: "Claussen Simon Stiftung Logo"
-    },
-        {
-        url: "/projectImg/bardo/support/06_2015-dfdk-logo-lang-rgb1.png",
-        alt: "Dachverband freie darstellende Künste Hamburg e.V. Logo"
-    }
-]
-thanks: [
-    {
-        url: "/projectImg/bardo/thanks/Epson-Logo.png",
-        alt: "EPSON Logo"
+      url: '/projectImg/bardo/support/01_DAKU_Logokombi_03-01.jpg',
+      alt: 'NEU START KULTUR Logo',
     },
     {
-        url: "/projectImg/bardo/thanks/image001.png",
-        alt: "Galerie Stobbe Paidere Mondot Logo"
+      url: '/projectImg/bardo/support/02_NPN_schwarz.jpg',
+      alt: 'Nationales Performance Netz Logo',
     },
     {
-        url: "/projectImg/bardo/thanks/image010 Kopie.png",
-        alt: "Pflanzmich.de Logo"
+      url: '/projectImg/bardo/support/03_BKM_2017_Office_Farbe_de.png',
+      alt: 'Die Beauftragte der Bundesregierung für Kultur und Medien Logo',
     },
     {
-        url: "/projectImg/bardo/thanks/Zeichenfläche-1.png",
-        alt: "WIESE Logo"
-    }
-]
+      url: '/projectImg/bardo/support/04_BKM_Neustart_Logo.jpg',
+      alt: 'Neue Start Kultur Logo',
+    },
+    {
+      url: '/projectImg/bardo/support/05_claussen-simon.png',
+      alt: 'Claussen Simon Stiftung Logo',
+    },
+    {
+      url: '/projectImg/bardo/support/06_2015-dfdk-logo-lang-rgb1.png',
+      alt: 'Dachverband freie darstellende Künste Hamburg e.V. Logo',
+    },
+  ]
+thanks:
+  [
+    {
+      url: '/projectImg/bardo/thanks/image001.png',
+      alt: 'Galerie Stobbe Paidere Mondot Logo',
+    },
+    {
+      url: '/projectImg/bardo/thanks/image010 Kopie.png',
+      alt: 'Pflanzmich.de Logo',
+    },
+    { url: '/projectImg/bardo/thanks/Zeichenfläche-1.png', alt: 'WIESE Logo' },
+  ]
 ---
+
 What comes after, when one day we must say goodbye to the world? Is
-there consciousness after death?Which longings draw us back to life? 
+there consciousness after death?Which longings draw us back to life?
 BARDO tells the story of the encounter in the transitional realm of Bardo
 between the young deceased monk, Duoje, and his teacher, Sun-Moon-
 Light. In this place, described in Tibetan Buddhism as the space between
@@ -93,4 +90,3 @@ Dramaturgy: Jean-Claude Mondot<br>
 Sound Technician : Robert Prior<br>
 Stream/Video: Diana Sanchez<br>
 Productions Manager : Jesse Oesterling<br>
-
