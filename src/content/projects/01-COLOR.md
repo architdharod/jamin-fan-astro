@@ -84,15 +84,10 @@ on our lives.
 <br>
 <br>
 
-This project is supported by the NATIONAL PERFORMANCE NETWORK -
-STEPPING OUT, funded by the Federal Government Commissioner for
-Culture and the Media as part of the NEUSTART KULTUR. Dance Assistance
-Program. And the Ministry of Culture of Taiwan and the support funds of
-WIESE e. G. Thanks to the support of the Centre National de la Danse, the
-performance will be rehearsed in Paris, as well as at the Open Studio in
-Thessaloniki (Greece), organized by Wolke Artgroup on April 1 and 2, 2023.
-rehearsed. Likewise, a big thank you for the support goes to: EPSON,
-Pflanzmich, Thessaloniki cinedance international, STAY Youth Hostel.
+Supported by the NATIONAL PERFORMANCE NETWORK - STEPPING OUT, funded by the Minister of State for Culture and Media within the framework of the initiative NEUSTART KULTUR. Assistance Program for Dance.  
+<br>
+<br>
+This project also support by the Ministry of Culture of Taiwan and the support funds of WIESE e. G. Thanks to the support of the Centre National de la Danse, the performance is rehearsed CN D in Paris, as well as at the Open Studio in Thessaloniki (Greece), organized by Wolke Artgroup. Likewise, a big thank you for the support goes to: Pflanzmich, Thessaloniki cinedance international, STAY Youth Hostel.
 <br>
 <br>
 Choreography and Production: Jasmine Fan<br>

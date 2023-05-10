@@ -40,6 +40,7 @@ support:
   ]
 thanks:
   [
+    { url: '/projectImg/bardo/thanks/Epson-Logo.png', alt: 'EPSON Logo' },
     {
       url: '/projectImg/bardo/thanks/image001.png',
       alt: 'Galerie Stobbe Paidere Mondot Logo',
@@ -72,6 +73,7 @@ immersing the viewer's gaze in the story. The audience is allowed to move
 freely between the performers, experiencing the accompanying camera,
 which directs the perspective of the viewers to intentional points in the
 choreography, through live projection.
+
 <br>
 
 ![What comes after, when one day we must say goodbye to the world?](/projectImg/bardo/bardo-2.webp)
@@ -90,3 +92,8 @@ Dramaturgy: Jean-Claude Mondot<br>
 Sound Technician : Robert Prior<br>
 Stream/Video: Diana Sanchez<br>
 Productions Manager : Jesse Oesterling<br>
+
+<br>
+<br>
+
+Supported by the NATIONAL PERFORMANCE NETWORK - STEPPING OUT, funded by the Minister of State for Culture and Media within the framework of the initiative NEUSTART KULTUR. Assistance Program for Dance.
