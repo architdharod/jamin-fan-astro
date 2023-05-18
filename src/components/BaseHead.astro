@@ -37,6 +37,10 @@ const { title, description, image = '/colors-ticket.jpeg' } = Astro.props;
 <meta property='og:description' content={description} />
 <meta property='og:image' content={new URL(image, Astro.url)} />
 
+<!-- WhatsApp -->
+<meta property='og:site_name' content='Your Site Name' />
+<meta property='og:locale' content='en_US' />
+
 <!-- Twitter -->
 <meta property='twitter:card' content='summary_large_image' />
 <meta property='twitter:url' content={Astro.url} />
