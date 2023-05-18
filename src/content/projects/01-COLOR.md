@@ -87,7 +87,7 @@ on our lives.
 Supported by the NATIONAL PERFORMANCE NETWORK - STEPPING OUT, funded by the Minister of State for Culture and Media within the framework of the initiative NEUSTART KULTUR. Assistance Program for Dance.  
 <br>
 <br>
-This project also support by the Ministry of Culture of Taiwan and the support funds of WIESE e. G. Thanks to the support of the Centre National de la Danse, the performance is rehearsed CN D in Paris, as well as at the Open Studio in Thessaloniki (Greece), organized by Wolke Artgroup. Likewise, a big thank you for the support goes to: Pflanzmich, Thessaloniki cinedance international, STAY Youth Hostel.
+This project also support by the Ministry of Culture of Taiwan and the support funds of WIESE e. G. Thanks to the support of the Centre National de la Danse, the performance is rehearsed CN D in Paris, as well as at the Open Studio in Thessaloniki (Greece), organized by Wolke Artgroup. Likewise, a big thank you for the support goes to: <a href="https://www.pflanzmich.de/" target="_blank">pflanzmich</a>, Thessaloniki cinedance international, STAY Youth Hostel.
 <br>
 <br>
 Choreography and Production: Jasmine Fan<br>

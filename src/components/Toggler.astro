@@ -1,36 +1,37 @@
 ---
-
 ---
-<button id="navbar-toggle" class="navbar-toggle bi bi-list" type="button"></button>
-  
-  <script type="module" client:idle>
-    // Wait until the component is hydrated
-    const navbarToggle = document.querySelector('#navbar-toggle');
-    const JafaLogo = document.querySelector('.JAFA-logo');
-    navbarToggle.addEventListener('click', () => {
-      const header = document.querySelector('header');
-      const display = getComputedStyle(header).display;
-  
-      if (display === 'none') {
-        header.style.display = 'block';
-      } else {
-        header.style.display = 'none';
-      }
-  
-      // Toggle class of the navbar-toggle button
-      if (navbarToggle.classList.contains('bi-list')) {
-        navbarToggle.classList.remove('bi-list');
-        navbarToggle.classList.add('bi-x-lg');
-      } else {
-        navbarToggle.classList.remove('bi-x-lg');
-        navbarToggle.classList.add('bi-list');
-      }
-    });
-  </script>
+
+<button id='navbar-toggle' class='navbar-toggle bi bi-list' type='button'
+></button>
+
+<script type='module'>
+  // Wait until the component is hydrated
+  const navbarToggle = document.querySelector('#navbar-toggle');
+  const JafaLogo = document.querySelector('.JAFA-logo');
+  navbarToggle.addEventListener('click', () => {
+    const header = document.querySelector('header');
+    const display = getComputedStyle(header).display;
+
+    if (display === 'none') {
+      header.style.display = 'block';
+    } else {
+      header.style.display = 'none';
+    }
+
+    // Toggle class of the navbar-toggle button
+    if (navbarToggle.classList.contains('bi-list')) {
+      navbarToggle.classList.remove('bi-list');
+      navbarToggle.classList.add('bi-x-lg');
+    } else {
+      navbarToggle.classList.remove('bi-x-lg');
+      navbarToggle.classList.add('bi-list');
+    }
+  });
+</script>
 
 <style>
-    #navbar-toggle{
-    position:absolute;
+  #navbar-toggle {
+    position: absolute;
     bottom: 1em;
     right: 1em;
     position: fixed;
@@ -43,6 +44,6 @@
     border-radius: 50%;
     background: transparent;
     color: #f5d9ce;
-    mix-blend-mode:difference;
-}
+    mix-blend-mode: difference;
+  }
 </style>
