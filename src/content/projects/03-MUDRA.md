@@ -42,7 +42,12 @@ thanks: [
 Mudra is an Indian word, rooted in Hinduism, that denotes a single symbolic
 hand gesture, of which there are many, also found in everyday life. Later
 adopted by Buddhism, mudras present a direct link to the enlightened self
-and the energy needed to find it. In the newest work by Hamburg-based
+and the energy needed to find it. 
+<br>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/472949664?h=c2fb08dd87&autoplay=1&loop=1&color=ff0179" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<br>
+
+In the newest work by Hamburg-based
 Taiwanese choreographer and film-maker Jasmine Fan, the different
 manifestations this symbolic hand language has taken in different cultures
 is explored with the underlying context of the choreographer's personal

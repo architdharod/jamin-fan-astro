@@ -27,6 +27,11 @@ while we go our own different ways?
 
 ![Scenes from the film "A walk in Mermaid's Shoes"](/projectImg/AWMS/awms-3.webp)
 <br>
+
+<br>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/290874719?h=b50ade0d99&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<br>
+
 Producer: Jasmine Fan<br>
 Executive Producer: Jasmine Fan, Ray Juster<br>
 Camera: Luis E. Villacis, Max Sänger, Diana Sánchez, Leon Daniel<br>

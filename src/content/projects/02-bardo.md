@@ -55,6 +55,11 @@ thanks:
 
 What comes after, when one day we must say goodbye to the world? Is
 there consciousness after death?Which longings draw us back to life?
+
+<br>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/630440589?h=4708fbffe0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<br>
+
 BARDO tells the story of the encounter in the transitional realm of Bardo
 between the young deceased monk, Duoje, and his teacher, Sun-Moon-
 Light. In this place, described in Tibetan Buddhism as the space between

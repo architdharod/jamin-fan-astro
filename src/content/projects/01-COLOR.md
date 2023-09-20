@@ -9,7 +9,7 @@ coverImage:
   {
     url: '/projectImg/COLOR/cover.webp',
     alt: 'COLOR Poster',
-    caption: 'Photography: Tobias Hoops',
+    caption: '',
   }
 support:
   [
@@ -41,15 +41,14 @@ thanks:
   ]
 ---
 
-Jasmine Fan presents her new dance performance "COLOR ⾊" live at the
-cultural center of WIESE e. G. from May 18 to 20, 2023 . She writes: "Do we
-have the longing in us to observe other people? In Mandarin, the word
+"Do we have the longing in us to observe other people? In Mandarin, the word
 "color" has the double meaning of color and eroticism. In terms of content,
 color is about the sliding transitions from neutral observing to protecting to
 monitoring.
 <br>
+<br>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/826468069?h=89646c9918&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-![Poster for the COLORS dance performance](/projectImg/COLOR/poster.webp)
 <br>
 
 The spatial installation does not separate the audience and stage areas; the
@@ -63,6 +62,10 @@ this purpose, an installation of millimeter-wave radar sensors is being
 developed in collaboration with the engineering group "Art Power" from
 Taiwan, which has meanwhile created various innovative high-tech
 installations for the performing arts.
+<br>
+<br>
+
+![Photograph by Felix Barnhard](/projectImg/COLOR/color-1.webp)
 
 <br>
 
@@ -70,16 +73,37 @@ With her multimedia dance performance, Taiwan-born Jasmine Fan and an
 international team explore the interrelationships of observation and
 surveillance. The piece runs through three sequences: Embedded in a very
 sensual choreography, the film layer of this first sequence shows images that
-the dancer creates of herself with her finger cameras. In the process, the
-boundaries between reality and illusion can be experienced. In a second
+the dancer creates of herself with her finger cameras. 
+<br>
+<br>
+
+![Photograph by Tobias Hoops](/projectImg/COLOR/color-2.webp)
+
+<br>
+<br>
+
+In the process, the boundaries between reality and illusion can be experienced. In a second
 sequence, a criminal story is told on film that the author herself had
-experienced in relation to surveillance cameras. In the last part, the dancer
-"watches" the audience with her cameras, who can prevent the camera
+experienced in relation to surveillance cameras. 
+<br>
+<br>
+
+![Photograph by I-Chun Chen](/projectImg/COLOR/color-3.webp)
+![Photograph by I-Chun Chen](/projectImg/COLOR/color-4.webp)
+
+<br>
+
+In the last part, the dancer "watches" the audience with her cameras, who can prevent the camera
 recording by moving. Animated by the dancer and the music, the piece ends
 in a collective dance, free of surveillance images. Last but not least, the
 dance performance is intended to stimulate reflection on the widespread
 ignorance of modern societies towards the effects of increasing surveillance
 on our lives.
+
+<br>
+<br>
+
+![Poster for the COLORS dance performance](/projectImg/COLOR/poster.webp)
 
 <br>
 <br>
@@ -110,4 +134,6 @@ Graphic Designer: Hadrien Durand-Baissas<br>
 PR Manager: Todor Barganov<br>
 Production Assistant: Cláudia Ferrando<br>
 Technische director: Camilo Bueno<br>
-Technische Assistant : Ammar Khadra<br>
+Technische Assistant : Ammar Khadra<br><br>
+
+Photo credits: Felix Barnhard, Tobias Hoops, I-Chun Chen
