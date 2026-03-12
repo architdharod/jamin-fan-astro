@@ -8,7 +8,7 @@ year: 2021
 coverImage:
   {
     url: "/projectImg/bardo/cover.webp",
-    alt: "BARDO cover image",
+    alt: "Two performers on stage during BARDO dance performance, one leaning back and another lying on a table under purple and blue lighting with live projection",
     caption: "Photography: Tobias Hoops",
   }
 support:
@@ -67,9 +67,9 @@ heaven, hell, and rebirth, Duoje's soul is faced with the choice between
 dissolution in Nirvana or rebirth in a real human body.
 <br>
 
-![What comes after, when one day we must say goodbye to the world?](/projectImg/bardo/bardo-1.webp)
+![Two performers seated at a wooden table in an intimate scene from BARDO, a contemporary dance piece exploring the Tibetan Buddhist concept of the space between death and rebirth](/projectImg/bardo/bardo-1.webp)
 
-![What comes after, when one day we must say goodbye to the world?](/projectImg/bardo/poster.webp)
+![BARDO event poster featuring a close-up portrait with yellow overlay, a contemporary dance performance by Jasmine Fan at Kraftwerk Bille Hamburg](/projectImg/bardo/poster.webp)
 
 Taking the form of both
 a live performance and a live-stream, the choreographic sequences that
@@ -81,7 +81,7 @@ choreography, through live projection.
 
 <br>
 
-![What comes after, when one day we must say goodbye to the world?](/projectImg/bardo/bardo-2.webp)
+![Diptych of BARDO dance performance showing motion-blurred dancers in expressive movement under white light and a solo performer lit in red and green](/projectImg/bardo/bardo-2.webp)
 
 Concept / Choreography / Artistic Direction: Jasmine Fan <br>
 Performers: Damien Fournier, Victor Mateos Arellano, Isabella Boldt, Tien Yi-

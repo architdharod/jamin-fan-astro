@@ -8,7 +8,7 @@ year: 2020
 coverImage:
   {
     url: "/projectImg/mudra/cover.webp",
-    alt: "Mudra Poster",
+    alt: "Two hands with spread fingers pressing against a hexagonal textured surface under pink and golden light during MUDRA contemporary dance performance by Jasmine Fan",
     caption: "Photography: Tobias Hoops",
   }
 support:
@@ -60,10 +60,10 @@ search for the connection between her new European culture and her
 Taiwanese roots.
 <br>
 
-![Official Mudra Poster](/projectImg/mudra/cover-2.webp)
-![Official Mudra Poster](/projectImg/mudra/mudra-poster.webp)
-![Mudra Performance](/projectImg/mudra/mudra-1.webp)
-![Mudra Performance](/projectImg/mudra/mudra-3.webp)
+![Performer's hands pressing against hexagonal glass illuminated in pink and amber light, portrait orientation, for MUDRA dance piece by Jasmine Fan](/projectImg/mudra/cover-2.webp)
+![Official poster for MUDRA by Jasmine Fan with Yin-Yun Chen and Isabella Boldt, featuring a blurred dancer silhouette under purple light at Lichthof Theater Hamburg](/projectImg/mudra/mudra-poster.webp)
+![Two scenes from MUDRA dance performance: dancers reaching through sheer fabric under warm red light, and two performers in an acrobatic pose under amber stage lighting](/projectImg/mudra/mudra-1.webp)
+![Solo performer standing on a reflective stage floor bathed in blue and purple light with sheer curtain backdrop during MUDRA contemporary dance performance at Lichthof Theater](/projectImg/mudra/mudra-3.webp)
 <br>
 Concept & Choreography: Jasmine Fan<br>
 Artistic direction: Jasmine Fan<br>

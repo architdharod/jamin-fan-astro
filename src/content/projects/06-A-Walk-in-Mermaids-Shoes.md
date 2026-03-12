@@ -8,7 +8,7 @@ year: 2017
 coverImage:
   {
     url: "/projectImg/AWMS/cover.webp",
-    alt: "Mudra Poster",
+    alt: "Dancer with flowing hair leaning back in a white dress on a rain-soaked city street at night during A Walk in Mermaid's Shoes dance film by Jasmine Fan",
     caption: "As she see her shadow, there is no one can stand like her",
   }
 ---

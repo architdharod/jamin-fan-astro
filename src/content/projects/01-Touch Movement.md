@@ -8,7 +8,7 @@ year: 2026
 coverImage:
   {
     url: '/projectImg/TouchMovement/touch-movement-cover.webp',
-    alt: 'Touch Movement Poster',
+    alt: 'Performer in white dress surrounded by audience under red lighting during Touch Movement interactive dance performance at Fondation Fiminco Paris',
     caption: '',
   }
 # support:
@@ -21,9 +21,9 @@ Touch Movement 空流 explores the irreversible trans-formation of the body thro
 <br>
 <br>
 
-![test](/projectImg/TouchMovement/touch-movement-0.webp)
+![Dancer bending forward in flowing white dress illuminated by red LED light tubes during Touch Movement contemporary dance performance](/projectImg/TouchMovement/touch-movement-0.webp)
 
-![test](/projectImg/TouchMovement/touch-movement-1.webp)
+![Performer crouching among audience members under deep red lighting with glowing light bars during Touch Movement immersive performance](/projectImg/TouchMovement/touch-movement-1.webp)
 
 <br>
 <br>
@@ -33,7 +33,7 @@ The piece engages with feelings of grief, shame, and the quiet erosion of identi
 <br>
 <br>
 
-![test](/projectImg/TouchMovement/touch-movement-2.webp)
+![Dancer seated on floor reaching upward beside vertical LED light bar with audience watching the Touch Movement radar sensor performance](/projectImg/TouchMovement/touch-movement-2.webp)
 
 <br>
 <br>
@@ -42,7 +42,7 @@ Using millimeter-wave radar sensors, the work invites the audience into a perfor
 
 <br>
 
-![test](/projectImg/TouchMovement/touch-movement-3.webp)
+![3D point cloud visualization of performance space captured by millimeter-wave radar sensors showing movement data from Touch Movement installation](/projectImg/TouchMovement/touch-movement-3.webp)
 
 <br>
 

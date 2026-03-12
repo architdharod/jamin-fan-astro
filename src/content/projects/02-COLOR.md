@@ -1,43 +1,43 @@
 ---
-id: '02'
-title: 'COLOR ⾊'
-description: 'Watch - Observe - Control'
-position: 'top'
-color: 'red'
+id: "02"
+title: "COLOR ⾊"
+description: "Watch - Observe - Control"
+position: "top"
+color: "red"
 year: 2023
 coverImage:
   {
-    url: '/projectImg/COLOR/cover.webp',
-    alt: 'COLOR Poster',
-    caption: '',
+    url: "/projectImg/COLOR/cover.webp",
+    alt: "Close-up profile of a face under blue and purple light with digital pixel effects for COLOR multimedia dance performance by Jasmine Fan",
+    caption: "",
   }
 support:
   [
     {
-      url: '/projectImg/COLOR/01-support.jpg',
-      alt: 'Nationales Performance Netz Logo',
+      url: "/projectImg/COLOR/01-support.jpg",
+      alt: "Nationales Performance Netz Logo",
     },
-    { url: '/projectImg/COLOR/02-support.JPG', alt: 'Neustart Kultur Logo' },
+    { url: "/projectImg/COLOR/02-support.JPG", alt: "Neustart Kultur Logo" },
     {
-      url: '/projectImg/COLOR/03-support.png',
-      alt: 'Die Beauftragte der Bundesregierung für Kultur und Medien Logo',
+      url: "/projectImg/COLOR/03-support.png",
+      alt: "Die Beauftragte der Bundesregierung für Kultur und Medien Logo",
     },
     {
-      url: '/projectImg/COLOR/04-support.jpg',
-      alt: 'Ministry of Culture - Republic of china (Taiwan) Logo',
+      url: "/projectImg/COLOR/04-support.jpg",
+      alt: "Ministry of Culture - Republic of china (Taiwan) Logo",
     },
-    { url: '/projectImg/COLOR/05-support.png', alt: 'WIESE Logo' },
+    { url: "/projectImg/COLOR/05-support.png", alt: "WIESE Logo" },
   ]
 thanks:
   [
-    { url: '/projectImg/COLOR/02-thanks.jpg', alt: 'CND Logo' },
+    { url: "/projectImg/COLOR/02-thanks.jpg", alt: "CND Logo" },
     {
-      url: '/projectImg/COLOR/03-thanks.png',
-      alt: 'thessaloniki cinedance international Logo',
+      url: "/projectImg/COLOR/03-thanks.png",
+      alt: "thessaloniki cinedance international Logo",
     },
-    { url: '/projectImg/COLOR/04-thanks.png', alt: 'die Wolke art group Logo' },
-    { url: '/projectImg/COLOR/05-thanks.png', alt: 'pflanzmich.de Logo' },
-    { url: '/projectImg/COLOR/06-thanks.jpg', alt: '.skg STAY Logo' },
+    { url: "/projectImg/COLOR/04-thanks.png", alt: "die Wolke art group Logo" },
+    { url: "/projectImg/COLOR/05-thanks.png", alt: "pflanzmich.de Logo" },
+    { url: "/projectImg/COLOR/06-thanks.jpg", alt: ".skg STAY Logo" },
   ]
 ---
 
@@ -47,6 +47,7 @@ color is about the sliding transitions from neutral observing to protecting to
 monitoring.
 <br>
 <br>
+
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/916719371?h=3b79442890&autoplay=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 <br>
@@ -69,8 +70,7 @@ installations for the performing arts.
 
 <br>
 
-
-<!-- ![Photograph by Felix Barnhard](/projectImg/COLOR/color-1.webp) -->
+<!-- ![Audience watching dancer perform in front of large purple projection screen showing finger camera footage during COLOR surveillance dance piece, photograph by Felix Barnhard](/projectImg/COLOR/color-1.webp) -->
 
 <br>
 
@@ -78,23 +78,23 @@ With her multimedia dance performance, Taiwan-born Jasmine Fan and an
 international team explore the interrelationships of observation and
 surveillance. The piece runs through three sequences: Embedded in a very
 sensual choreography, the film layer of this first sequence shows images that
-the dancer creates of herself with her finger cameras. 
+the dancer creates of herself with her finger cameras.
 <br>
 <br>
 
-![Photograph by Tobias Hoops](/projectImg/COLOR/color-2.webp)
+![Dancer with hand-mounted cameras performing under pink and purple light with real-time projections during COLOR interactive dance performance, photograph by Tobias Hoops](/projectImg/COLOR/color-2.webp)
 
 <br>
 <br>
 
 In the process, the boundaries between reality and illusion can be experienced. In a second
 sequence, a criminal story is told on film that the author herself had
-experienced in relation to surveillance cameras. 
+experienced in relation to surveillance cameras.
 <br>
 <br>
 
-![Photograph by I-Chun Chen](/projectImg/COLOR/color-3.webp)
-![Photograph by I-Chun Chen](/projectImg/COLOR/color-4.webp)
+![Audience silhouettes standing between large projection screens displaying surveillance film imagery in red light during COLOR dance performance, photograph by I-Chun Chen](/projectImg/COLOR/color-3.webp)
+![Dancer silhouette with raised fist projected onto screen under purple lighting with audience member watching the COLOR observation and surveillance performance, photograph by I-Chun Chen](/projectImg/COLOR/color-4.webp)
 
 <br>
 
@@ -108,7 +108,7 @@ on our lives.
 <br>
 <br>
 
-![Poster for the COLORS dance performance](/projectImg/COLOR/poster.webp)
+![Official poster for COLOR dance performance by Jasmine Fan at WIESE Hamburg May 2023 featuring close-up face profile with digital glitch effects](/projectImg/COLOR/poster.webp)
 
 <br>
 <br>
@@ -116,7 +116,7 @@ on our lives.
 Supported by the NATIONAL PERFORMANCE NETWORK - STEPPING OUT, funded by the Minister of State for Culture and Media within the framework of the initiative NEUSTART KULTUR. Assistance Program for Dance.  
 <br>
 <br>
-This project also support by the Ministry of Culture of Taiwan and the support funds of WIESE e. G. Thanks to the support of the Centre National de la Danse, the performance is rehearsed CN D in Paris, as well as at the Open Studio in Thessaloniki (Greece), organized by Wolke Artgroup. Likewise, a big thank you for the support goes to: <a href="https://www.pflanzmich.de/" target="_blank">pflanzmich</a>, Thessaloniki cinedance international, STAY Youth Hostel.
+This project also support by the Ministry of Culture of Taiwan and the support funds of WIESE e. G. Thanks to the support of the Centre National de la Danse, the performance is rehearsed CN D in Paris, as well as at the Open Studio in Thessaloniki (Greece), organized by Wolke Artgroup. Likewise, a big thank you for the support goes to: Thessaloniki cinedance international, STAY Youth Hostel.
 <br>
 <br>
 Choreography and Production: Jasmine Fan<br>
