@@ -6,7 +6,7 @@ position: "top"
 color: "red"
 year: 2019
 coverImage:
-  { url: "/projectImg/OHNEZWEI/cover.webp", alt: "OHNEWEI Poster", caption: "" }
+  { url: "/projectImg/OHNEZWEI/cover.webp", alt: "Three dancers of OHNEZWEI dance performance standing in a purple heather field – Jasmine Fan, Marion Sparber, and Alan Fuentes Guerra", caption: "" }
 ---
 
 Jasmine Fan inszeniert die Vorstellung, dass die Welt oder das Sein nicht aus
@@ -26,11 +26,11 @@ Bühnengeschehens. Drei Tänzer*innen bewegen sich über die geteilte Bühne
 und weichen die Grenzen zwischen Traum, Wirklichkeit, Alltag und Theater
 auf.
 
-![OHNEZWEI](/projectImg/OHNEZWEI/ohnezwei-1.webp)
+![Dancer silhouette performing in front of a forest projection on a translucent screen during OHNEZWEI by Jasmine Fan](/projectImg/OHNEZWEI/ohnezwei-1.webp)
 
 <br>
 
-![OHNEZWEI](/projectImg/OHNEZWEI/ohnezwei-2.webp)
+![Three contemporary dancers performing a dynamic lift on a white stage in OHNEZWEI, a dance performance by Jasmine Fan](/projectImg/OHNEZWEI/ohnezwei-2.webp)
 <br>
 
 Konzept: Jasmine Fan<br>
