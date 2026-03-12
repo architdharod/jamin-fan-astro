@@ -54,7 +54,7 @@ const { support , thanks } : Props = Astro.props;
     }
 
 
-    <h2 class="font-space-mono color-secondary"><a href="/">HOME</a></h2>
+    <p class="home-link font-space-mono color-secondary"><a href="/">HOME</a></p>
 
 </footer>
 
@@ -63,6 +63,12 @@ const { support , thanks } : Props = Astro.props;
     h2 {
         font-size: clamp(0.761625rem, 0.634rem + 0.6384vw, 1.4rem);
         padding: 3em 0 0.8em 0;
+    }
+
+    .home-link {
+        font-size: clamp(0.761625rem, 0.634rem + 0.6384vw, 1.4rem);
+        padding: 3em 0 0.8em 0;
+        font-weight: bold;
     }
 
     a {

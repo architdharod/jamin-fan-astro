@@ -9,7 +9,7 @@ import { SITE_DESCRIPTION } from "../consts";
             <source src="/404.webm" type="video/webm">
         </video>
         <div class="site-description font-rubik">
-            <h1>404:<br> Page not found</h1>
+            <h2 class="error-title">404:<br> Page not found</h2>
         </div>
     </main>
 </BaseLayout>
@@ -30,7 +30,7 @@ import { SITE_DESCRIPTION } from "../consts";
         transform: translate(0, -50%);
     }
 
-    h1 {
+    .error-title {
         font-size: clamp(3rem, 1.8854rem + 5.0955vw, 8rem);
         text-align: center;
         color: rgb(187, 69, 42);

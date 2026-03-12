@@ -11,13 +11,13 @@ const ProjectCovers = await getCollection('projects');
                 <img class="cover-img" src={cover.data.coverImage.url} alt={cover.data.coverImage.alt}/>
                 
                 <div class={`gallery-discription ${cover.data.position} ${cover.data.color}`}>
-                    <h1 id="id" class="font-rubik">{cover.data.id}</h1>
+                    <span id="id" class="font-rubik">{cover.data.id}</span>
                     <div id="heading">
-                        <h1 class="font-rubik">
+                        <h2 class="project-title font-rubik">
                             <a href={`/project/`+ cover.slug}>
                                 {cover.data.title}
                             </a>
-                        </h1>
+                        </h2>
                         <h2>
                             <a href={`/project/`+ cover.slug} class="font-rubik">{cover.data.description}  &#8594</a>
                         </h2>
@@ -60,6 +60,7 @@ const ProjectCovers = await getCollection('projects');
         grid-row: 1;
         grid-column: 1;
         padding-inline: 0.2rem;
+        font-size: clamp(1.631875rem, 1.3582rem + 1.3681vw, 3rem);
     }
 
     #heading {
@@ -68,7 +69,7 @@ const ProjectCovers = await getCollection('projects');
         padding-inline: clamp(0.5rem, -0.1688rem + 3.0573vw, 3.5rem);
     }
 
-    h1 {
+    .project-title {
         font-size: clamp(1.631875rem, 1.3582rem + 1.3681vw, 3rem);
     }
 
