@@ -14,6 +14,7 @@ export interface Props {
 
 //Defining Props
 const {title, description, image} = Astro.props;
+const year = new Date().getFullYear();
 ---
 <!-- Website designed and developed by Archit Dharod (https://dharod.de/) -->
 <!DOCTYPE html>
@@ -27,5 +28,21 @@ const {title, description, image} = Astro.props;
 		<slot>
 			
 		</slot>
+		<footer class="site-footer font-space-mono">
+			<p>&copy; {year} JASMINE FAN. All rights reserved.</p>
+		</footer>
     </body>
 </html>
+
+<style>
+	.site-footer {
+		padding: 2em clamp(1rem, 0.6rem + 2vw, 3rem);
+		font-size: clamp(0.65rem, 0.55rem + 0.5vw, 0.85rem);
+		color: var(--color-secondary, #666);
+		text-align: center;
+	}
+
+	.site-footer p {
+		margin: 0;
+	}
+</style>
