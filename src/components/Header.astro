@@ -2,23 +2,38 @@
 import HeaderLink from './HeaderLink.astro';
 import { getCollection } from 'astro:content';
 import Toggler from './Toggler.astro';
-import {RandTitle} from "./RandomTitle";
+import { titles } from '../data/titles';
+
 const proj = await getCollection('projects');
 ---
 <Toggler />
 <header>
 	<nav>
 		<div>
-			<h2 class="font-space-mono color-secondary home">
+			<h1 class="font-space-mono color-secondary home">
 				<a href="/">
 					JASMINE FAN Choreographer, Curator, Artist
 				</a>
-			</h2>
-			<RandTitle/>
+			</h1>
+			<h2 id="random-title" class="changing-title font-rubik color-primary" data-titles={JSON.stringify(titles)}></h2>
+			<script is:inline>
+				(function() {
+					var el = document.getElementById("random-title");
+					var stored = sessionStorage.getItem("random-title");
+					if (stored) {
+						el.textContent = stored;
+						return;
+					}
+					var titles = JSON.parse(el.dataset.titles);
+					var title = titles[Math.floor(Math.random() * titles.length)];
+					sessionStorage.setItem("random-title", title);
+					el.textContent = title;
+				})();
+			</script>
 		</div>
 
 		<div>
-			<h2 class="font-space-mono color-secondary">PROJECTS</h2>
+			<h3 class="font-space-mono color-secondary">PROJECTS</h3>
 			<ul>
 				{proj.map(element =>(
 					<li>
@@ -31,7 +46,7 @@ const proj = await getCollection('projects');
 		</div>
 
 		<div>
-			<h2 class="font-space-mono color-secondary">JASMINE FAN</h2>
+			<h3 class="font-space-mono color-secondary">JASMINE FAN</h3>
 			<p class="font-rubik">
 				Jasmine Fan, born in Taiwan, is a curator, Choreographer and dancer based in
 				Hamburg and Paris, working with a variety of genres and artists. Her work
@@ -45,7 +60,7 @@ const proj = await getCollection('projects');
 		</div>
 
 		<div>
-			<h2 class="font-space-mono color-secondary">PRESS</h2>
+			<h3 class="font-space-mono color-secondary">PRESS</h3>
 			<p class="font-rubik">
 				<a href="https://www.der-theaterverlag.de/tanz/aktuelles-heft/artikel/videoueberwachung/" target="_blank">
 					Videoüberwachung // 2023-11 by Der Theater Verlag tanz
@@ -80,7 +95,7 @@ const proj = await getCollection('projects');
 		</div-->
 
 		<div>
-			<h2 class="font-space-mono  color-secondary">CONTACT</h2>
+			<h3 class="font-space-mono  color-secondary">CONTACT</h3>
 			<p class="font-rubik color-primary">
 				jasmine@jasminefan.de <br>
 				Phone: +49 176 31620022<br>
@@ -126,11 +141,15 @@ const proj = await getCollection('projects');
 	}
 	
 	h1 {
+		font-size: clamp(0.7615625rem, 0.6806rem + 0.4047vw, 1.16625rem);
+	}
+
+	h2 {
 		font-size: clamp(1.631875rem, 1.3582rem + 1.3681vw, 3rem);
     	line-height: 1.2;
 	}
 
-	h2{
+	h3 {
 		font-size: clamp(0.7615625rem, 0.6806rem + 0.4047vw, 1.16625rem);
 	}
 

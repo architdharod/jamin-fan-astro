@@ -1,49 +1,54 @@
 ---
-id: "03"
+id: "04"
 title: "MUDRA"
 description: "From spiritual worlds to a consumer society, from divinity to profanity"
 position: "bottom"
 color: "blue"
 year: 2020
-coverImage: {
-    url: "/projectImg/mudra/cover.webp", 
+coverImage:
+  {
+    url: "/projectImg/mudra/cover.webp",
     alt: "Mudra Poster",
-    caption: "Photography: Tobias Hoops"
-}
-support: [
+    caption: "Photography: Tobias Hoops",
+  }
+support:
+  [
     {
-        url: "/projectImg/mudra/support/01_Hintergrund.png",
-        alt: "Hamburg Behörde für Kultur und Medien Logo"
+      url: "/projectImg/mudra/support/01_Hintergrund.png",
+      alt: "Hamburg Behörde für Kultur und Medien Logo",
     },
     {
-        url: "/projectImg/mudra/support/02_image002.png",
-        alt: "Hamburgische Kultur Stiftung Logo"
+      url: "/projectImg/mudra/support/02_image002.png",
+      alt: "Hamburgische Kultur Stiftung Logo",
     },
     {
-        url: "/projectImg/mudra/support/03_Asset 55.png",
-        alt: "Dachberband freie darstellende Künste Hamburg e.V. Logo"
+      url: "/projectImg/mudra/support/03_Asset 55.png",
+      alt: "Dachberband freie darstellende Künste Hamburg e.V. Logo",
     },
     {
-        url: "/projectImg/mudra/support/04_image010 Kopie.png",
-        alt: "pflanzmich.de Logo"
+      url: "/projectImg/mudra/support/04_image010 Kopie.png",
+      alt: "pflanzmich.de Logo",
     },
     {
-        url: "/projectImg/mudra/support/05_logo_lhtheater_18_rgb_lhweb Kopie 2.png",
-        alt: "LICHTHOF THEATER Logo"
-    }
-]
-thanks: [
+      url: "/projectImg/mudra/support/05_logo_lhtheater_18_rgb_lhweb Kopie 2.png",
+      alt: "LICHTHOF THEATER Logo",
+    },
+  ]
+thanks:
+  [
     {
-        url: "/projectImg/mudra/thanks/logo.png",
-        alt: "Galerie Stobbe Paidere Mondot Logo"
-    }
-]
+      url: "/projectImg/mudra/thanks/logo.png",
+      alt: "Galerie Stobbe Paidere Mondot Logo",
+    },
+  ]
 ---
+
 Mudra is an Indian word, rooted in Hinduism, that denotes a single symbolic
 hand gesture, of which there are many, also found in everyday life. Later
 adopted by Buddhism, mudras present a direct link to the enlightened self
-and the energy needed to find it. 
+and the energy needed to find it.
 <br>
+
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/472949664?h=c2fb08dd87&autoplay=1&loop=1&color=ff0179" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <br>
 

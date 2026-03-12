@@ -1,17 +1,14 @@
 ---
-id: "04"
+id: "05"
 title: "OHNEZWEI 無二"
 description: "Ein Wort aus dem Buddhismus beschreibt einen unbegrenzten Zustand. Leere, ein Ohne, ein Vakuum und auch das Nirwana."
 position: "top"
 color: "red"
 year: 2019
-coverImage: {
-    url: "/projectImg/OHNEZWEI/cover.webp",
-    alt: "OHNEWEI Poster",
-    caption: ""
-}
-
+coverImage:
+  { url: "/projectImg/OHNEZWEI/cover.webp", alt: "OHNEWEI Poster", caption: "" }
 ---
+
 Jasmine Fan inszeniert die Vorstellung, dass die Welt oder das Sein nicht aus
 getrennten festen Dingen besteht, sondern aus Kräften oder Schwingungen,
 die sich wie beim Tanz ineinander wandeln.
@@ -45,3 +42,4 @@ Kamera: Tobias Hoops<br>
 Assistenz: Doria Worden, Valerie Witt<br>
 Produktion: IDEA – Tanz Theater Performance, Jasmine Fan, Marion Sparber<br>
 Produktionsleitung: Doris Plankl<br>
+

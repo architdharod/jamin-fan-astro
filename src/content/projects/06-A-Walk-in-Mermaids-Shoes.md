@@ -1,16 +1,18 @@
 ---
-id: "05"
+id: "06"
 title: "A Walk in Mermaid’s Shoes"
 description: "As she see her shadow, there is no one can standing like her"
 position: "bottom"
 color: "white"
 year: 2017
-coverImage: {
+coverImage:
+  {
     url: "/projectImg/AWMS/cover.webp",
     alt: "Mudra Poster",
-    caption: "As she see her shadow, there is no one can stand like her"
-}
+    caption: "As she see her shadow, there is no one can stand like her",
+  }
 ---
+
 If mermaids are refugees from the sea, what could their dreams be about?
 Waiting for the rescue, like a princess waits for her prince. While trying to
 settle in the human world, these mermaids stumbled upon different
@@ -49,3 +51,4 @@ Anke Moosmayer, Sihäm Refaie, Sina Rundel, Selina Lettenbichler, Jasmine Fan
 <br><br>
 Dancers:<br>
 Sihäm Refaie, Sina Rundel, Selina Lettenbichler, Jasmine Fan, Muwala-Paulo Lando, Lena Reyle, David Espinosa A, Nils Loe, Dimitri Hassert, Dominik Lamovski, Lorenzo Pignataro, Patricia Carolin Mai, Karolin Hochdahl, Jérôme Zeltner
+
