@@ -2,6 +2,7 @@
 ---
 
 <button id='navbar-toggle' class='navbar-toggle bi bi-list' type='button'
+  aria-label='Toggle navigation menu' aria-expanded='false' aria-controls='sidebar-nav'
 ></button>
 
 <script type='module'>
@@ -14,8 +15,10 @@
 
     if (display === 'none') {
       header.style.display = 'block';
+      navbarToggle.setAttribute('aria-expanded', 'true');
     } else {
       header.style.display = 'none';
+      navbarToggle.setAttribute('aria-expanded', 'false');
     }
 
     // Toggle class of the navbar-toggle button
