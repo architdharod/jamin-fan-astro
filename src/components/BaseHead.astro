@@ -9,8 +9,6 @@ export interface Props {
   image?: string;
 }
 
-//TODO: what is CanonicalURL?
-//TODO: What is Astro.url.pathname. what is the Astro API?
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = '/colors-ticket.jpeg' } = Astro.props;
@@ -38,7 +36,7 @@ const { title, description, image = '/colors-ticket.jpeg' } = Astro.props;
 <meta property='og:image' content={new URL(image, Astro.url)} />
 
 <!-- WhatsApp -->
-<meta property='og:site_name' content='Your Site Name' />
+<meta property='og:site_name' content='Jasmine Fan' />
 <meta property='og:locale' content='en_US' />
 
 <!-- Twitter -->
