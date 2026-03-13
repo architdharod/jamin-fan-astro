@@ -10,18 +10,23 @@ export interface Props {
 	title: string;
 	description: string;
 	image?: string;
+	imageWidth?: number;
+	imageHeight?: number;
+	imageType?: string;
+	imageAlt?: string;
+	ogType?: 'website' | 'article';
 	preloadImage?: string;
 }
 
 //Defining Props
-const {title, description, image, preloadImage} = Astro.props;
+const {title, description, image, imageWidth, imageHeight, imageType, imageAlt, ogType, preloadImage} = Astro.props;
 const year = new Date().getFullYear();
 ---
 <!-- Website designed and developed by Archit Dharod (https://dharod.de/) -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} image={image} preloadImage={preloadImage} />
+		<BaseHead title={title} description={description} image={image} imageWidth={imageWidth} imageHeight={imageHeight} imageType={imageType} imageAlt={imageAlt} ogType={ogType} preloadImage={preloadImage} />
 	</head>
 	<body>
 		<a href="#main-content" class="skip-to-content">Skip to main content</a>

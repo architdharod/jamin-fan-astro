@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
+import { getImage } from "astro:assets";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { SITE_TITLE } from "../../consts";
 import ProjectImage from "../../components/ProjectImage.astro";
@@ -24,6 +25,9 @@ const {Content} = await render(entry);
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://jasminefan.de';
 const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const coverImageUrl = new URL(entry.data.coverImage.url.src, Astro.site).toString();
+
+// Generate an OG-optimized 1200x630 JPEG version of the cover image for social media
+const ogImage = await getImage({ src: entry.data.coverImage.url, width: 1200, height: 630, format: 'jpg', fit: 'cover' });
 
 // CreativeWork schema for every project
 const creativeWorkSchema = {
@@ -62,7 +66,7 @@ const videoJsonLdStrings: string[] = (entry.data.videos ?? []).map(
         })
 );
 ---
-<BaseLayout title={entry.data.title + " - " + SITE_TITLE} description={entry.data.description} image={entry.data.coverImage.url.src}>
+<BaseLayout title={entry.data.title + " - " + SITE_TITLE} description={entry.data.description} image={ogImage.src} imageWidth={1200} imageHeight={630} imageType="image/jpeg" imageAlt={entry.data.coverImage.alt} ogType="article">
     <script type="application/ld+json" set:html={JSON.stringify(creativeWorkSchema)} />
     {videoJsonLdStrings.map((jsonStr) => (
         <script type="application/ld+json" set:html={jsonStr} />
