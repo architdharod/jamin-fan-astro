@@ -36,13 +36,13 @@ const proj = await getCollection('projects');
 		<div>
 			<h3 class="font-space-mono color-secondary">PROJECTS</h3>
 			<ul>
-				{proj.map(element =>(
-					<li>
-						<HeaderLink href={`/project/`+ element.slug} class="block font-rubik">
-						{element.data.title}
-						</HeaderLink>
-					</li>
-				))}
+			{proj.map(element =>(
+				<li>
+					<HeaderLink href={`/project/`+ element.id} class="block font-rubik">
+					{element.data.title}
+					</HeaderLink>
+				</li>
+			))}
 			</ul>
 		</div>
 

@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { SITE_TITLE } from "../../consts";
 import ProjectImage from "../../components/ProjectImage.astro";
@@ -11,7 +11,7 @@ export async function getStaticPaths() {
     const proj = await getCollection('projects');
     return proj.map( entry => (
         {
-            params: {slug: entry.slug},
+            params: {slug: entry.id},
             props: {entry},
         }
     ))
@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 
 // 2. When its time for render, get the entry directly from the prop.
 const {entry} = Astro.props;
-const {Content} = await entry.render();
+const {Content} = await render(entry);
 
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://jasminefan.de';
 const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();

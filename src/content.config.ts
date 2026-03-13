@@ -1,12 +1,13 @@
-//import utilites from astro:content
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
 
-//define a schema
 const projectCollection = defineCollection({
+	loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
 	schema: z.object({
 		id: z.string(),
 		title: z.string(),
-		description: z.string(), 
+		description: z.string(),
 		position: z.enum(["top", "middle", "bottom"]).default("bottom"),
 		color: z.enum(["red", "blue", "black", "white", "yellow", "green"]).default("black"),
 		year: z.number(),
@@ -14,7 +15,7 @@ const projectCollection = defineCollection({
 			url: z.string(),
 			alt: z.string(),
 			caption: z.string(),
-		}).required(),
+		}),
 		support: z.object({
 			url: z.string(),
 			alt: z.string(),
@@ -29,10 +30,8 @@ const projectCollection = defineCollection({
 			thumbnailUrl: z.string().optional(),
 		})).optional(),
 	})
-})
-
-//exporting the defined collections: 
+});
 
 export const collections = {
-	'projects' : projectCollection,
-}
+	'projects': projectCollection,
+};
