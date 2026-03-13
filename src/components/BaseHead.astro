@@ -4,6 +4,10 @@
 import '../styles/global.css';
 import { SITE_TITLE } from '../consts';
 
+// Import font files so Vite resolves them to hashed asset URLs for preloading
+import rubikLatinWoff2 from '@fontsource-variable/rubik/files/rubik-latin-wght-normal.woff2?url';
+import spaceMonoLatinWoff2 from '@fontsource/space-mono/files/space-mono-latin-400-normal.woff2?url';
+
 export interface Props {
   title: string;
   description: string;
@@ -35,6 +39,10 @@ const personSchema = {
   ],
 };
 ---
+
+<!-- Preload critical fonts to prevent FOUT (Flash of Unstyled Text) -->
+<link rel='preload' as='font' type='font/woff2' href={rubikLatinWoff2} crossorigin />
+<link rel='preload' as='font' type='font/woff2' href={spaceMonoLatinWoff2} crossorigin />
 
 <!-- Global Metadata -->
 <meta charset='utf-8' />

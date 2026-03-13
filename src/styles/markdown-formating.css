@@ -1,14 +1,14 @@
 /* css stylesheet for the markdown page content */
 
 .markdown-formatting h1{
-    font-family: 'Rubik', 'sans-serif';
+    font-family: 'Rubik Variable', sans-serif;
     font-weight: normal;
     font-size: clamp(0.875rem, 0.73rem + 0.725vw, 1.6rem);
     color: var(--color-primary);
 }
 
 .markdown-formatting h2{
-    font-family: 'Rubik', 'sans-serif';
+    font-family: 'Rubik Variable', sans-serif;
     font-weight: normal;
     font-size: clamp(0.8rem, 0.66rem + 0.7vw, 1.5rem);
     color: var(--color-primary);
@@ -17,13 +17,13 @@
 .markdown-formatting h3 {
     font-size: clamp(0.76125rem, 0.6335rem + 0.6387vw, 1.4rem);
     padding: 1em 0 1em 0;
-    font-family: 'Space Mono';
+    font-family: 'Space Mono', monospace;
     color: var(--color-secondary);
     text-align: center;
 }
 
 .markdown-formatting p {
-    font-family: 'Rubik', 'sans-serif';
+    font-family: 'Rubik Variable', sans-serif;
     font-weight: 200;
     font-size: clamp(0.86875rem, 0.7225rem + 0.7313vw, 1.6rem);
     color: var(--color-primary);
