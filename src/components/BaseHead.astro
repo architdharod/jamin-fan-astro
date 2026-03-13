@@ -2,6 +2,7 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
+import { SITE_TITLE } from '../consts';
 
 export interface Props {
   title: string;
@@ -10,8 +11,29 @@ export interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://jasminefan.de';
 
 const { title, description, image = '/colors-ticket.jpeg' } = Astro.props;
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE_TITLE,
+  url: siteUrl,
+};
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Jasmine Fan',
+  jobTitle: 'Choreographer',
+  url: siteUrl,
+  sameAs: [
+    'https://www.instagram.com/jasminefan_choreographer/',
+    'https://www.youtube.com/channel/UCxkomaXB9x5oNEI_5W9KdIw',
+    'https://vimeo.com/jasminefan',
+  ],
+};
 ---
 
 <!-- Global Metadata -->
@@ -54,3 +76,7 @@ const { title, description, image = '/colors-ticket.jpeg' } = Astro.props;
 
 <!--Link to sitemap -->
 <link rel='sitemap' href='/sitemap-index.xml' />
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />

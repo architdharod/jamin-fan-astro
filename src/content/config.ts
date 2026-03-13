@@ -23,6 +23,11 @@ const projectCollection = defineCollection({
 			url: z.string(),
 			alt: z.string(),
 		}).array().optional(),
+		videos: z.array(z.object({
+			title: z.string(),
+			url: z.string(),
+			thumbnailUrl: z.string().optional(),
+		})).optional(),
 	})
 })
 

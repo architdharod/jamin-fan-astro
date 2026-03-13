@@ -41,6 +41,13 @@ thanks:
       alt: "Galerie Stobbe Paidere Mondot Logo",
     },
   ]
+videos:
+  [
+    {
+      title: "MUDRA — Performance Trailer",
+      url: "https://vimeo.com/472949664",
+    },
+  ]
 ---
 
 Mudra is an Indian word, rooted in Hinduism, that denotes a single symbolic

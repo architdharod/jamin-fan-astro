@@ -11,6 +11,13 @@ coverImage:
     alt: "Dancer with flowing hair leaning back in a white dress on a rain-soaked city street at night during A Walk in Mermaid's Shoes dance film by Jasmine Fan",
     caption: "As she see her shadow, there is no one can stand like her",
   }
+videos:
+  [
+    {
+      title: "A Walk in Mermaid's Shoes — Dance Film",
+      url: "https://vimeo.com/290874719",
+    },
+  ]
 ---
 
 If mermaids are refugees from the sea, what could their dreams be about?

@@ -39,6 +39,17 @@ thanks:
     { url: "/projectImg/COLOR/05-thanks.png", alt: "pflanzmich.de Logo" },
     { url: "/projectImg/COLOR/06-thanks.jpg", alt: ".skg STAY Logo" },
   ]
+videos:
+  [
+    {
+      title: "COLOR ⾊ — Performance Trailer",
+      url: "https://vimeo.com/916719371",
+    },
+    {
+      title: "COLOR ⾊ — Rehearsal Excerpt",
+      url: "https://vimeo.com/826468069",
+    },
+  ]
 ---
 
 "Do we have the longing in us to observe other people? In Mandarin, the word

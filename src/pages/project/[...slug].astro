@@ -20,8 +20,53 @@ export async function getStaticPaths() {
 // 2. When its time for render, get the entry directly from the prop.
 const {entry} = Astro.props;
 const {Content} = await entry.render();
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://jasminefan.de';
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const coverImageUrl = new URL(entry.data.coverImage.url, Astro.site).toString();
+
+// CreativeWork schema for every project
+const creativeWorkSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: entry.data.title,
+    description: entry.data.description,
+    author: {
+        '@type': 'Person',
+        name: 'Jasmine Fan',
+        url: siteUrl,
+    },
+    dateCreated: `${entry.data.year}`,
+    url: pageUrl,
+    image: coverImageUrl,
+};
+
+// Extract Vimeo video ID from a canonical URL like https://vimeo.com/916719371
+function getVimeoId(url: string): string {
+    const match = url.match(/vimeo\.com\/(\d+)/);
+    return match ? match[1] : '';
+}
+
+// VideoObject schemas for projects with videos — pre-stringified for the template
+const videoJsonLdStrings: string[] = (entry.data.videos ?? []).map(
+    (video: { title: string; url: string; thumbnailUrl?: string }) =>
+        JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'VideoObject',
+            name: video.title,
+            description: entry.data.description,
+            contentUrl: video.url,
+            embedUrl: `https://player.vimeo.com/video/${getVimeoId(video.url)}`,
+            thumbnailUrl: video.thumbnailUrl || coverImageUrl,
+            uploadDate: `${entry.data.year}`,
+        })
+);
 ---
 <BaseLayout title={entry.data.title + " - " + SITE_TITLE} description={entry.data.description} image={entry.data.coverImage.url}>
+    <script type="application/ld+json" set:html={JSON.stringify(creativeWorkSchema)} />
+    {videoJsonLdStrings.map((jsonStr) => (
+        <script type="application/ld+json" set:html={jsonStr} />
+    ))}
     <main>
         <div class="proj-title">
             <h2 class="font-space-mono color-secondary">PROJECT {entry.data.id} // {entry.data.year}</h2>

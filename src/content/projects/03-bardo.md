@@ -51,6 +51,13 @@ thanks:
     },
     { url: "/projectImg/bardo/thanks/Zeichenfläche-1.png", alt: "WIESE Logo" },
   ]
+videos:
+  [
+    {
+      title: "BARDO — Performance Trailer",
+      url: "https://vimeo.com/630440589",
+    },
+  ]
 ---
 
 What comes after, when one day we must say goodbye to the world? Is
