@@ -5,7 +5,8 @@ const ProjectCovers = (await getCollection('projects')).sort((a, b) => a.id.loca
 
 //position, color, default-color, size, font
 ---
-<main>
+<main id="main-content">
+    <h1 class="sr-only">Jasmine Fan — Projects</h1>
     {
         ProjectCovers.map((cover, index) =>(
             <section>
@@ -30,9 +31,9 @@ const ProjectCovers = (await getCollection('projects')).sort((a, b) => a.id.loca
                                 {cover.data.title}
                             </a>
                         </h2>
-                        <h2>
+                        <p class="gallery-subtitle">
                             <a href={`/project/`+ cover.id} class="font-rubik">{cover.data.description}  &#8594</a>
-                        </h2>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -90,7 +91,7 @@ const ProjectCovers = (await getCollection('projects')).sort((a, b) => a.id.loca
         font-size: clamp(1.631875rem, 1.3582rem + 1.3681vw, 3rem);
     }
 
-    h2 {
+    h2, .gallery-subtitle {
         font-size: clamp(0.870625rem, 0.7248rem + 0.7294vw, 1.6rem);
     }
 

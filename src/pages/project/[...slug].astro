@@ -67,10 +67,10 @@ const videoJsonLdStrings: string[] = (entry.data.videos ?? []).map(
     {videoJsonLdStrings.map((jsonStr) => (
         <script type="application/ld+json" set:html={jsonStr} />
     ))}
-    <main>
+    <main id="main-content">
         <div class="proj-title">
-            <h2 class="font-space-mono color-secondary">PROJECT {entry.data.id} // {entry.data.year}</h2>
-            <h2 class="project-title font-rubik color-primary">{entry.data.title}</h2>
+            <p class="font-space-mono color-secondary project-subtitle">PROJECT {entry.data.id} // {entry.data.year}</p>
+            <h1 class="project-title font-rubik color-primary">{entry.data.title}</h1>
         </div>
         <ProjectImage 
             src={entry.data.coverImage.url}
@@ -96,7 +96,7 @@ const videoJsonLdStrings: string[] = (entry.data.videos ?? []).map(
         padding-bottom: 2em;
     }
 
-    h2 {
+    .project-subtitle {
         font-size: clamp(0.761625rem, 0.634rem + 0.6384vw, 1.4rem);
     }
 

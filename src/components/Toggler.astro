@@ -13,31 +13,74 @@
 </button>
 
 <script type='module'>
-  // Wait until the component is hydrated
   const navbarToggle = document.querySelector('#navbar-toggle');
-  const JafaLogo = document.querySelector('.JAFA-logo');
   const iconList = document.querySelector('#icon-list');
   const iconClose = document.querySelector('#icon-close');
+  const header = document.querySelector('header');
 
-  navbarToggle.addEventListener('click', () => {
-    const header = document.querySelector('header');
-    const display = getComputedStyle(header).display;
+  function openNav() {
+    header.style.display = 'block';
+    navbarToggle.setAttribute('aria-expanded', 'true');
+    iconList.style.display = 'none';
+    iconClose.style.display = '';
 
-    if (display === 'none') {
-      header.style.display = 'block';
-      navbarToggle.setAttribute('aria-expanded', 'true');
-    } else {
-      header.style.display = 'none';
-      navbarToggle.setAttribute('aria-expanded', 'false');
+    // Move focus to the first focusable element inside the nav
+    const firstFocusable = header.querySelector('a, button, [tabindex]:not([tabindex="-1"])');
+    if (firstFocusable) firstFocusable.focus();
+
+    // Add focus trap and escape listener
+    document.addEventListener('keydown', handleNavKeydown);
+  }
+
+  function closeNav() {
+    header.style.display = 'none';
+    navbarToggle.setAttribute('aria-expanded', 'false');
+    iconList.style.display = '';
+    iconClose.style.display = 'none';
+
+    // Return focus to the toggle button
+    navbarToggle.focus();
+
+    document.removeEventListener('keydown', handleNavKeydown);
+  }
+
+  function handleNavKeydown(e) {
+    if (e.key === 'Escape') {
+      closeNav();
+      return;
     }
 
-    // Toggle icon visibility
-    if (iconList.style.display !== 'none') {
-      iconList.style.display = 'none';
-      iconClose.style.display = '';
+    // Focus trap: keep Tab cycling within the header + toggle button
+    if (e.key === 'Tab') {
+      const focusableEls = [
+        ...header.querySelectorAll('a[href], button, [tabindex]:not([tabindex="-1"])'),
+        navbarToggle,
+      ];
+      if (focusableEls.length === 0) return;
+
+      const firstEl = focusableEls[0];
+      const lastEl = focusableEls[focusableEls.length - 1];
+
+      if (e.shiftKey) {
+        if (document.activeElement === firstEl) {
+          e.preventDefault();
+          lastEl.focus();
+        }
+      } else {
+        if (document.activeElement === lastEl) {
+          e.preventDefault();
+          firstEl.focus();
+        }
+      }
+    }
+  }
+
+  navbarToggle.addEventListener('click', () => {
+    const display = getComputedStyle(header).display;
+    if (display === 'none') {
+      openNav();
     } else {
-      iconList.style.display = '';
-      iconClose.style.display = 'none';
+      closeNav();
     }
   });
 </script>
