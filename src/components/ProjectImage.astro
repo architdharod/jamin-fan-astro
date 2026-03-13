@@ -23,6 +23,11 @@ const { src, alt, class: className, caption, ...props } = Astro.props;
 </div>
 
 <style>
+    .project-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
     h3 {
         font-size: clamp(0.76125rem, 0.6335rem + 0.6387vw, 1.4rem);
         padding: 0.5em 0 1.5em 0;

@@ -31,7 +31,8 @@
 
 .markdown-formatting img {
     padding-top: 1em;
-    max-height: 90vh;
+    max-width: 100%;
+    height: auto;
     margin-inline: auto;
 }
 
