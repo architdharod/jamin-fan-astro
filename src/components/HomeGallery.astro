@@ -1,14 +1,22 @@
 ---
 import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
 const ProjectCovers = (await getCollection('projects')).sort((a, b) => a.id.localeCompare(b.id));
 
 //position, color, default-color, size, font
 ---
 <main>
     {
-        ProjectCovers.map(cover =>(
+        ProjectCovers.map((cover, index) =>(
             <section>
-                <img class="cover-img" src={cover.data.coverImage.url} alt={cover.data.coverImage.alt}/>
+                <Picture
+                    class="cover-img"
+                    src={cover.data.coverImage.url}
+                    formats={['avif', 'webp']}
+                    alt={cover.data.coverImage.alt}
+                    loading={index === 0 ? 'eager' : 'lazy'}
+                    fetchpriority={index === 0 ? 'high' : 'auto'}
+                />
                 
                 <div class={`gallery-discription ${cover.data.position} ${cover.data.color}`}>
                     <span class="gallery-id font-rubik">{cover.data.id}</span>
@@ -35,14 +43,19 @@ const ProjectCovers = (await getCollection('projects')).sort((a, b) => a.id.loca
         position: relative;
     }
 
-    .cover-img {
+    picture {
         width: 100%;
         height: 100%;
-        object-fit: cover;
         position: absolute;
         top: 0;
         left: 0;
         z-index: -1;
+    }
+
+    .cover-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .gallery-discription {

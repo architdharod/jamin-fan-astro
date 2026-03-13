@@ -6,7 +6,7 @@ position: "top"
 color: "red"
 year: 2019
 coverImage:
-  { url: "/projectImg/OHNEZWEI/cover.webp", alt: "Three dancers of OHNEZWEI dance performance standing in a purple heather field – Jasmine Fan, Marion Sparber, and Alan Fuentes Guerra", caption: "" }
+  { url: "../../assets/projectImg/OHNEZWEI/cover.webp", alt: "Three dancers of OHNEZWEI dance performance standing in a purple heather field – Jasmine Fan, Marion Sparber, and Alan Fuentes Guerra", caption: "" }
 videos:
   [
     {
@@ -15,14 +15,17 @@ videos:
     },
   ]
 ---
+import { Image } from 'astro:assets';
+import ohnezwei1 from '../../assets/projectImg/OHNEZWEI/ohnezwei-1.webp';
+import ohnezwei2 from '../../assets/projectImg/OHNEZWEI/ohnezwei-2.webp';
 
 Jasmine Fan inszeniert die Vorstellung, dass die Welt oder das Sein nicht aus
 getrennten festen Dingen besteht, sondern aus Kräften oder Schwingungen,
 die sich wie beim Tanz ineinander wandeln.
 
-<br>
+<br />
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/379622586?h=3397f7e529&autoplay=1&loop=1&color=ff9933" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-<br>
+<br />
 
 Um dieses Gefühl des Zusammenhangs aller Dinge und die Auflösung der
 Gegensätze erlebbar zu machen, teilt sie den Raum mit einer
@@ -33,20 +36,19 @@ Bühnengeschehens. Drei Tänzer*innen bewegen sich über die geteilte Bühne
 und weichen die Grenzen zwischen Traum, Wirklichkeit, Alltag und Theater
 auf.
 
-![Dancer silhouette performing in front of a forest projection on a translucent screen during OHNEZWEI by Jasmine Fan](/projectImg/OHNEZWEI/ohnezwei-1.webp)
+<Image src={ohnezwei1} alt="Dancer silhouette performing in front of a forest projection on a translucent screen during OHNEZWEI by Jasmine Fan" />
 
-<br>
+<br />
 
-![Three contemporary dancers performing a dynamic lift on a white stage in OHNEZWEI, a dance performance by Jasmine Fan](/projectImg/OHNEZWEI/ohnezwei-2.webp)
-<br>
+<Image src={ohnezwei2} alt="Three contemporary dancers performing a dynamic lift on a white stage in OHNEZWEI, a dance performance by Jasmine Fan" />
+<br />
 
-Konzept: Jasmine Fan<br>
-Choreografie und Tanz : Jasmine Fan, Marion Sparber, Alan Fuentes Guerra<br>
-Künstlerische Leitung : Jasmine Fan<br>
-Film: Jasmine Fan<br>
-Musik: Sum-Sum Shen, Ilya Selikhov<br>
-Kamera: Tobias Hoops<br>
-Assistenz: Doria Worden, Valerie Witt<br>
-Produktion: IDEA – Tanz Theater Performance, Jasmine Fan, Marion Sparber<br>
-Produktionsleitung: Doris Plankl<br>
-
+Konzept: Jasmine Fan<br />
+Choreografie und Tanz : Jasmine Fan, Marion Sparber, Alan Fuentes Guerra<br />
+Künstlerische Leitung : Jasmine Fan<br />
+Film: Jasmine Fan<br />
+Musik: Sum-Sum Shen, Ilya Selikhov<br />
+Kamera: Tobias Hoops<br />
+Assistenz: Doria Worden, Valerie Witt<br />
+Produktion: IDEA – Tanz Theater Performance, Jasmine Fan, Marion Sparber<br />
+Produktionsleitung: Doris Plankl<br />

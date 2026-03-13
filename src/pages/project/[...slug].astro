@@ -23,7 +23,7 @@ const {Content} = await render(entry);
 
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://jasminefan.de';
 const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
-const coverImageUrl = new URL(entry.data.coverImage.url, Astro.site).toString();
+const coverImageUrl = new URL(entry.data.coverImage.url.src, Astro.site).toString();
 
 // CreativeWork schema for every project
 const creativeWorkSchema = {
@@ -62,7 +62,7 @@ const videoJsonLdStrings: string[] = (entry.data.videos ?? []).map(
         })
 );
 ---
-<BaseLayout title={entry.data.title + " - " + SITE_TITLE} description={entry.data.description} image={entry.data.coverImage.url}>
+<BaseLayout title={entry.data.title + " - " + SITE_TITLE} description={entry.data.description} image={entry.data.coverImage.url.src}>
     <script type="application/ld+json" set:html={JSON.stringify(creativeWorkSchema)} />
     {videoJsonLdStrings.map((jsonStr) => (
         <script type="application/ld+json" set:html={jsonStr} />

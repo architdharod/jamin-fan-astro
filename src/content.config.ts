@@ -3,8 +3,8 @@ import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 const projectCollection = defineCollection({
-	loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
-	schema: z.object({
+	loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects' }),
+	schema: ({ image }) => z.object({
 		id: z.string(),
 		title: z.string(),
 		description: z.string(),
@@ -12,16 +12,16 @@ const projectCollection = defineCollection({
 		color: z.enum(["red", "blue", "black", "white", "yellow", "green"]).default("black"),
 		year: z.number(),
 		coverImage: z.object({
-			url: z.string(),
+			url: image(),
 			alt: z.string(),
 			caption: z.string(),
 		}),
 		support: z.object({
-			url: z.string(),
+			url: image(),
 			alt: z.string(),
 		}).array().optional(),
 		thanks: z.object({
-			url: z.string(),
+			url: image(),
 			alt: z.string(),
 		}).array().optional(),
 		videos: z.array(z.object({
