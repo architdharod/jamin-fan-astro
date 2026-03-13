@@ -12,12 +12,13 @@ export interface Props {
   title: string;
   description: string;
   image?: string;
+  preloadImage?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://jasminefan.de';
 
-const { title, description, image = '/colors-ticket.jpeg' } = Astro.props;
+const { title, description, image = '/colors-ticket.jpeg', preloadImage } = Astro.props;
 
 const websiteSchema = {
   '@context': 'https://schema.org',
@@ -43,6 +44,9 @@ const personSchema = {
 <!-- Preload critical fonts to prevent FOUT (Flash of Unstyled Text) -->
 <link rel='preload' as='font' type='font/woff2' href={rubikLatinWoff2} crossorigin />
 <link rel='preload' as='font' type='font/woff2' href={spaceMonoLatinWoff2} crossorigin />
+
+{/* Preload the LCP hero image so the browser fetches it before discovering it in HTML */}
+{preloadImage && <link rel='preload' as='image' type='image/avif' href={preloadImage} fetchpriority='high' />}
 
 <!-- Global Metadata -->
 <meta charset='utf-8' />

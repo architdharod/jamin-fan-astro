@@ -29,6 +29,7 @@ const { support , thanks } : Props = Astro.props;
                             <Image
                                 src={eachSupporter.url}
                                 alt={eachSupporter.alt}
+                                loading="lazy"
                             />
                         )
                     })
@@ -49,6 +50,7 @@ const { support , thanks } : Props = Astro.props;
                             <Image
                                 src={eachThankee.url}
                                 alt={eachThankee.alt}
+                                loading="lazy"
                             />
                         )
                     })

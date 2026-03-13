@@ -5,8 +5,15 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 //Importing layouts
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HomeGallery from "../components/HomeGallery.astro";
+
+// Resolve the first cover image for LCP preloading
+import { getCollection } from "astro:content";
+import { getImage } from "astro:assets";
+const projects = (await getCollection('projects')).sort((a, b) => a.id.localeCompare(b.id));
+const firstCover = projects[0]?.data.coverImage.url;
+const lcpImage = firstCover ? await getImage({ src: firstCover, format: 'avif', width: 640, quality: 80 }) : null;
 ---
 
-<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} >
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} preloadImage={lcpImage?.src}>
     <HomeGallery/>
 </BaseLayout>

@@ -17,6 +17,7 @@ const { src, alt, class: className, caption, ...props } = Astro.props;
     <Image
         src={src}
         alt={alt}
+        loading="lazy"
         {...props}
     />
     <h3 class="font-space-mono color-secondary">{caption}</h3>

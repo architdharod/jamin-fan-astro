@@ -10,17 +10,18 @@ export interface Props {
 	title: string;
 	description: string;
 	image?: string;
+	preloadImage?: string;
 }
 
 //Defining Props
-const {title, description, image} = Astro.props;
+const {title, description, image, preloadImage} = Astro.props;
 const year = new Date().getFullYear();
 ---
 <!-- Website designed and developed by Archit Dharod (https://dharod.de/) -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} image={image} />
+		<BaseHead title={title} description={description} image={image} preloadImage={preloadImage} />
 	</head>
 	<body>
 		<Header></Header>
