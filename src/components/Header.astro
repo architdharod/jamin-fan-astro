@@ -3,6 +3,7 @@ import HeaderLink from './HeaderLink.astro';
 import { getCollection } from 'astro:content';
 import Toggler from './Toggler.astro';
 import { titles } from '../data/titles';
+import Icon from './Icon.astro';
 
 const proj = await getCollection('projects');
 ---
@@ -99,15 +100,15 @@ const proj = await getCollection('projects');
 				Phone: +49 176 31620022<br>
 			</p>
 			<div class="social-media">
-			<a href="https://www.instagram.com/jasminefan_choreographer/" target="_blank" rel="noopener noreferrer">
-				<i class="bi bi-instagram color-primary"></i><span class="sr-only">Instagram</span>
-			</a>
-			<a href="https://www.youtube.com/channel/UCxkomaXB9x5oNEI_5W9KdIw" target="_blank" rel="noopener noreferrer">
-				<i class="bi bi-youtube color-primary"></i><span class="sr-only">YouTube</span>
-			</a>
-			<a href="https://vimeo.com/jasminefan" target="_blank" rel="noopener noreferrer">
-				<i class="bi bi-vimeo color-primary"></i><span class="sr-only">Vimeo</span>
-			</a>
+		<a href="https://www.instagram.com/jasminefan_choreographer/" target="_blank" rel="noopener noreferrer">
+			<Icon name="instagram" class="color-primary" /><span class="sr-only">Instagram</span>
+		</a>
+		<a href="https://www.youtube.com/channel/UCxkomaXB9x5oNEI_5W9KdIw" target="_blank" rel="noopener noreferrer">
+			<Icon name="youtube" class="color-primary" /><span class="sr-only">YouTube</span>
+		</a>
+		<a href="https://vimeo.com/jasminefan" target="_blank" rel="noopener noreferrer">
+			<Icon name="vimeo" class="color-primary" /><span class="sr-only">Vimeo</span>
+		</a>
 			</div>
 		</div>
 
