@@ -3,6 +3,7 @@
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
 import { SITE_TITLE } from '../consts';
+import { press } from '../data/press';
 
 // Import font files so Vite resolves them to hashed asset URLs for preloading
 import rubikLatinWoff2 from '@fontsource-variable/rubik/files/rubik-latin-wght-normal.woff2?url';
@@ -42,6 +43,25 @@ const websiteSchema = {
   url: siteUrl,
 };
 
+const pressSchema = press.map((entry) => {
+  const article: Record<string, unknown> = {
+    '@type': 'NewsArticle',
+    url: entry.url,
+    headline: entry.title,
+    datePublished: entry.datePublished,
+    publisher: {
+      '@type': 'Organization',
+      name: entry.publisher,
+      ...(entry.publisherUrl ? { url: entry.publisherUrl } : {}),
+    },
+    about: { '@type': 'Person', name: 'Jasmine Fan' },
+  };
+  if (entry.author) {
+    article.author = { '@type': 'Person', name: entry.author };
+  }
+  return article;
+});
+
 const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
@@ -53,6 +73,7 @@ const personSchema = {
     'https://www.youtube.com/channel/UCxkomaXB9x5oNEI_5W9KdIw',
     'https://vimeo.com/jasminefan',
   ],
+  subjectOf: pressSchema,
 };
 ---
 
