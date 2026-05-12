@@ -107,6 +107,7 @@ const showTagActive = new Date() < upcomingShow.endsAt;
     .gallery-heading {
         grid-row: 1 / 3;
         grid-column: 2 / 3;
+        min-width: 0;
         padding-inline: clamp(0.5rem, -0.1688rem + 3.0573vw, 3.5rem);
     }
 
@@ -152,24 +153,21 @@ const showTagActive = new Date() < upcomingShow.endsAt;
 
     .live-tag {
         display: inline-flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 0.5em;
         margin-top: 0.85em;
-        padding: 0.5em 0.85em;
+        padding: 0.55em 0.85em;
         background: rgba(20, 10, 8, 0.72);
         color: #f5d9ce;
         text-decoration: none;
         font-size: clamp(0.66rem, 0.58rem + 0.35vw, 0.82rem);
         letter-spacing: 0.04em;
-        line-height: 1;
-        border-radius: 999px;
+        line-height: 1.35;
+        border-radius: 14px;
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
         transition: background-color 160ms ease, transform 160ms ease;
         max-width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     .live-tag:hover,
@@ -181,6 +179,7 @@ const showTagActive = new Date() < upcomingShow.endsAt;
     .live-icon {
         width: 0.95em;
         height: 0.95em;
+        margin-top: 0.18em;
         flex-shrink: 0;
         opacity: 0.9;
     }
