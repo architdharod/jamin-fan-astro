@@ -1,0 +1,239 @@
+---
+import { Image } from 'astro:assets';
+import showImage from '../assets/upcoming/touch-movement-capture-i.png';
+
+const eventEndISO = '2026-05-24T00:00:00+02:00';
+const cndUrl = 'https://www.cnd.fr/fr/program/5090-1-km-de-danse-2026';
+const storageKey = 'jf-upcoming-touch-movement-2026-05-23-dismissed';
+
+const eventEnd = new Date(eventEndISO);
+const shouldRender = new Date() < eventEnd;
+---
+
+{shouldRender && (
+  <dialog
+    id="upcoming-show"
+    class="upcoming-show"
+    aria-labelledby="upcoming-show-title"
+    aria-describedby="upcoming-show-blurb"
+    data-storage-key={storageKey}
+    data-end-iso={eventEndISO}
+  >
+    <div class="upcoming-card">
+      <button type="button" id="upcoming-close" class="upcoming-close" aria-label="Dismiss announcement">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+        </svg>
+      </button>
+
+      <div class="upcoming-media">
+        <Image
+          src={showImage}
+          alt="Performer in white against red lighting during a Touch Movement performance"
+          widths={[480, 720, 960, 1280]}
+          sizes="(min-width: 700px) 480px, 92vw"
+          quality={75}
+          formats={['avif', 'webp']}
+          loading="eager"
+        />
+      </div>
+
+      <div class="upcoming-body">
+        <p class="upcoming-eyebrow font-space-mono color-secondary">UPCOMING · TOUCH MOVEMENT 空流 - CAPTURE I</p>
+        <h2 id="upcoming-show-title" class="upcoming-title font-rubik color-primary">
+          CND 1KM Danse 2026
+        </h2>
+        <p class="upcoming-meta font-space-mono color-secondary">
+          <span>Sat 23 May 2026 · 14:30</span><br />
+          <span>Théâtre du Fil de l'Eau · CND, Pantin</span>
+        </p>
+        <p id="upcoming-show-blurb" class="upcoming-blurb font-rubik color-primary">
+          A live performance with dance and music - presented along the Canal de l'Ourcq for CND's annual public dance day.
+        </p>
+        <a
+          class="upcoming-cta font-space-mono"
+          href={cndUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          See the festival programme ↗
+        </a>
+      </div>
+    </div>
+  </dialog>
+)}
+
+<script>
+  (function () {
+    const dialog = document.getElementById('upcoming-show') as HTMLDialogElement | null;
+    if (!dialog) return;
+
+    const storageKey = dialog.dataset.storageKey || '';
+    const endISO = dialog.dataset.endIso || '';
+
+    // Client-side expiry guard (covers cached pages served after the show)
+    if (endISO && new Date() >= new Date(endISO)) {
+      dialog.remove();
+      try { localStorage.removeItem(storageKey); } catch {}
+      return;
+    }
+
+    try {
+      if (storageKey && localStorage.getItem(storageKey) === '1') {
+        dialog.remove();
+        return;
+      }
+    } catch {}
+
+    const closeBtn = document.getElementById('upcoming-close');
+
+    function dismiss() {
+      try { if (storageKey) localStorage.setItem(storageKey, '1'); } catch {}
+      if (dialog!.open) dialog!.close();
+    }
+
+    // Click outside the card closes (dialog itself is the backdrop region)
+    dialog.addEventListener('click', (e) => {
+      if (e.target === dialog) dismiss();
+    });
+
+    closeBtn?.addEventListener('click', dismiss);
+
+    // Native <dialog> already handles Escape, but tag it so we persist dismissal
+    dialog.addEventListener('close', () => {
+      try { if (storageKey) localStorage.setItem(storageKey, '1'); } catch {}
+    });
+
+    // Open after a short, polite delay so it doesn't slam onto first paint
+    const open = () => {
+      if (!dialog.open && typeof dialog.showModal === 'function') {
+        dialog.showModal();
+      }
+    };
+    if ('requestIdleCallback' in window) {
+      // @ts-ignore
+      requestIdleCallback(() => setTimeout(open, 1200), { timeout: 2500 });
+    } else {
+      setTimeout(open, 1500);
+    }
+  })();
+</script>
+
+<style>
+  .upcoming-show {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    max-width: min(440px, 92vw);
+    width: 100%;
+  }
+
+  .upcoming-show::backdrop {
+    background: rgba(20, 10, 8, 0.55);
+    backdrop-filter: blur(2px);
+  }
+
+  .upcoming-show[open] {
+    animation: upcomingFadeIn 220ms ease-out;
+  }
+
+  @keyframes upcomingFadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .upcoming-show[open] { animation: none; }
+  }
+
+  .upcoming-card {
+    position: relative;
+    background: #f5d9ce;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  }
+
+  .upcoming-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 2;
+    width: 2rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(245, 217, 206, 0.85);
+    color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+
+  .upcoming-close:hover,
+  .upcoming-close:focus-visible {
+    background: #f5d9ce;
+  }
+
+  .upcoming-media {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+  }
+
+  .upcoming-media :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .upcoming-body {
+    padding: clamp(1rem, 0.6rem + 1.6vw, 1.5rem) clamp(1rem, 0.6rem + 1.6vw, 1.5rem) clamp(1.1rem, 0.7rem + 1.6vw, 1.6rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+  }
+
+  .upcoming-eyebrow {
+    font-size: clamp(0.62rem, 0.55rem + 0.3vw, 0.78rem);
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+
+  .upcoming-title {
+    font-size: clamp(1.25rem, 1.05rem + 1vw, 1.7rem);
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .upcoming-meta {
+    font-size: clamp(0.72rem, 0.62rem + 0.4vw, 0.88rem);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .upcoming-blurb {
+    font-size: clamp(0.88rem, 0.78rem + 0.5vw, 1.02rem);
+    line-height: 1.45;
+    margin: 0.1em 0 0.2em;
+  }
+
+  .upcoming-cta {
+    align-self: flex-start;
+    font-size: clamp(0.82rem, 0.72rem + 0.4vw, 0.95rem);
+    color: var(--color-primary, rgba(0,0,0,0.85));
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    padding-bottom: 0.15em;
+    margin-top: 0.2em;
+  }
+
+  .upcoming-cta:hover,
+  .upcoming-cta:focus-visible {
+    border-bottom-color: rgba(0, 0, 0, 0.85);
+  }
+</style>

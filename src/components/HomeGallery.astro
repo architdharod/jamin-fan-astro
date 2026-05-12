@@ -3,6 +3,15 @@ import { getCollection } from "astro:content";
 import { Picture } from "astro:assets";
 const ProjectCovers = (await getCollection('projects')).sort((a, b) => a.id.localeCompare(b.id));
 
+// Upcoming-show tag for Touch Movement — hides automatically once the show has passed
+const upcomingShow = {
+    projectId: '01',
+    url: 'https://www.cnd.fr/fr/program/5090-1-km-de-danse-2026',
+    label: 'Coming Soon · Sat 23 May · 14:30 · CND 1KM danse, Pantin',
+    endsAt: new Date('2026-05-24T00:00:00+02:00'),
+};
+const showTagActive = new Date() < upcomingShow.endsAt;
+
 //position, color, default-color, size, font
 ---
 <main id="main-content">
@@ -34,6 +43,20 @@ const ProjectCovers = (await getCollection('projects')).sort((a, b) => a.id.loca
                         <p class="gallery-subtitle">
                             <a href={`/project/`+ cover.id} class="font-rubik">{cover.data.description}  &#8594</a>
                         </p>
+                        {showTagActive && cover.data.id === upcomingShow.projectId && (
+                            <a
+                                class="live-tag font-space-mono"
+                                href={upcomingShow.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={`${upcomingShow.label} - opens cnd.fr in a new tab`}
+                            >
+                                <svg class="live-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                                </svg>
+                                <span class="live-text">{upcomingShow.label} <span aria-hidden="true">&#8599;</span></span>
+                            </a>
+                        )}
                     </div>
                 </div>
             </section>
@@ -126,6 +149,41 @@ const ProjectCovers = (await getCollection('projects')).sort((a, b) => a.id.loca
     .yellow {color: rgb(255, 196, 0)}
 
     .green {color: green}
+
+    .live-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5em;
+        margin-top: 0.85em;
+        padding: 0.5em 0.85em;
+        background: rgba(20, 10, 8, 0.72);
+        color: #f5d9ce;
+        text-decoration: none;
+        font-size: clamp(0.66rem, 0.58rem + 0.35vw, 0.82rem);
+        letter-spacing: 0.04em;
+        line-height: 1;
+        border-radius: 999px;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        transition: background-color 160ms ease, transform 160ms ease;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .live-tag:hover,
+    .live-tag:focus-visible {
+        background: rgba(20, 10, 8, 0.88);
+        transform: translateY(-1px);
+    }
+
+    .live-icon {
+        width: 0.95em;
+        height: 0.95em;
+        flex-shrink: 0;
+        opacity: 0.9;
+    }
 
     /** ---- media queries ---- */
 

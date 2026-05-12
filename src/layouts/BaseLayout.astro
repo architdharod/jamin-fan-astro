@@ -3,6 +3,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import JAFALogo from "../components/JAFA-logo.astro";
+import UpcomingShow from "../components/UpcomingShow.astro";
 import '@fontsource-variable/rubik';
 import "@fontsource/space-mono";
 
@@ -32,6 +33,7 @@ const year = new Date().getFullYear();
 		<a href="#main-content" class="skip-to-content">Skip to main content</a>
 		<Header></Header>
 		<JAFALogo></JAFALogo>
+		<UpcomingShow />
 		<slot>
 			
 		</slot>
