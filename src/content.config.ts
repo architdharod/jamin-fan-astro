@@ -28,6 +28,7 @@ const projectCollection = defineCollection({
 			title: z.string(),
 			url: z.string(),
 			thumbnailUrl: z.string().optional(),
+			uploadDate: z.string().datetime({ offset: true }).optional(),
 		})).optional(),
 	})
 });

@@ -40,7 +40,7 @@ const creativeWorkSchema = {
         name: 'Jasmine Fan',
         url: siteUrl,
     },
-    dateCreated: `${entry.data.year}`,
+    dateCreated: `${entry.data.year}-01-01T00:00:00Z`,
     url: pageUrl,
     image: coverImageUrl,
 };
@@ -53,7 +53,7 @@ function getVimeoId(url: string): string {
 
 // VideoObject schemas for projects with videos — pre-stringified for the template
 const videoJsonLdStrings: string[] = (entry.data.videos ?? []).map(
-    (video: { title: string; url: string; thumbnailUrl?: string }) =>
+    (video: { title: string; url: string; thumbnailUrl?: string; uploadDate?: string }) =>
         JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'VideoObject',
@@ -62,7 +62,7 @@ const videoJsonLdStrings: string[] = (entry.data.videos ?? []).map(
             contentUrl: video.url,
             embedUrl: `https://player.vimeo.com/video/${getVimeoId(video.url)}`,
             thumbnailUrl: video.thumbnailUrl || coverImageUrl,
-            uploadDate: `${entry.data.year}`,
+            uploadDate: video.uploadDate ?? `${entry.data.year}-01-01T00:00:00Z`,
         })
 );
 ---
