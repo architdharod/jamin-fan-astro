@@ -15,6 +15,7 @@ const projectCollection = defineCollection({
 			url: image(),
 			alt: z.string(),
 			caption: z.string(),
+			focus: z.enum(["left", "center", "right"]).default("center"),
 		}),
 		support: z.object({
 			url: image(),

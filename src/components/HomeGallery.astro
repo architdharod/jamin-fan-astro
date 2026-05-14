@@ -30,6 +30,7 @@ const showTagActive = new Date() < upcomingShow.endsAt;
                     alt={cover.data.coverImage.alt}
                     loading={index === 0 ? 'eager' : 'lazy'}
                     fetchpriority={index === 0 ? 'high' : 'auto'}
+                    style={`object-position: ${cover.data.coverImage.focus} center;`}
                 />
                 
                 <div class={`gallery-discription ${cover.data.position} ${cover.data.color}`}>
