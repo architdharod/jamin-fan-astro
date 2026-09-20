@@ -1,0 +1,21 @@
+src/components/BaseHead.astro
+  s_de6bc2e3d334e5::t_fa0ee93d960c27 72
+src/components/Header.astro
+  s_de6bc2e3d334e5::t_fa0ee93d960c27 116
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8b2022fcf53ad57f7113105ffe188bcee1398ab6",
+  "prompts": {},
+  "sessions": {
+    "s_de6bc2e3d334e5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a79ef5ad-e207-430c-8d4b-a5e373a0b2ac",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "archit dharod <archi.parchi7@gmail.com>"
+    }
+  }
+}
