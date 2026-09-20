@@ -1,0 +1,21 @@
+package.json
+  s_de6bc2e3d334e5::t_d94bcfc9dbd046 13,18-19
+  s_de6bc2e3d334e5::t_fe39d539e83b4d 17,21
+  s_de6bc2e3d334e5::t_534348161eff23 22-26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3f5501a64737e6d9c6a9108f06d37c785d115905",
+  "prompts": {},
+  "sessions": {
+    "s_de6bc2e3d334e5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a79ef5ad-e207-430c-8d4b-a5e373a0b2ac",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "archit dharod <archi.parchi7@gmail.com>"
+    }
+  }
+}
