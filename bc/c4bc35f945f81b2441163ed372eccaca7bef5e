@@ -1,0 +1,20 @@
+.github/workflows/deploy.yml
+  s_de6bc2e3d334e5::t_d4f04db3f26014 1-7,13-19,21,26,28,30-35,37-41,43-44
+  s_de6bc2e3d334e5::t_644622c379e477 8-12,20,22-25,27,29,36,42,45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "bcc4bc35f945f81b2441163ed372eccaca7bef5e",
+  "prompts": {},
+  "sessions": {
+    "s_de6bc2e3d334e5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a79ef5ad-e207-430c-8d4b-a5e373a0b2ac",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "archit dharod <archi.parchi7@gmail.com>"
+    }
+  }
+}
